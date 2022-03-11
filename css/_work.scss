@@ -210,10 +210,93 @@ footer {
 /* =================================================================================================
 TB
 ================================================================================================= */
-@media screen and (min-width:720px) {
-  
+@media screen and (min-width:600px) {
+  h1 {  
+    font: $tb-h1;
+  }
+
+  .h1-lg {
+    font: $tb-h1-lg;
+  }
 }
 
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width:1000px) {
+  #wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  h1 {  
+    font: $pc-h1;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .h1-lg {
+    font: $pc-h1-lg;
+  }
+
+//  h2 {
+//    font: $pc-h2;
+//  }
+  
+  /* ------------------------------
+  Header
+  ------------------------------ */
+  header {
+    height: 80px;
+    left: 0;
+  }
+  
+  nav ul {
+    margin: 0 0 0 5%;
+    position: fixed;
+
+    li {    
+      a {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 80px;
+        padding-right: 20px;
+      }
+    }
+  }
+  
+  .lang-switch {
+    top: 24px;
+  }
+  
+  /* ------------------------------
+  work-list
+  ------------------------------ */
+  .work-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+    margin-bottom: 60px;
+    
+    .work-container {
+      margin: 0;
+    }
+    
+    .work-batonne {
+      grid-area: 1 / 1 / 2 / 2; 
+    }
+
+    .work-tms {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .work-suisui {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+  }
+  
+}
 
   
   
