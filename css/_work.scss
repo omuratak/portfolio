@@ -29,6 +29,10 @@ strong {
   font-weight: 700;
 }
 
+small {
+  font: $sub-text;
+}
+
 /* ------------------------------
 Header
 ------------------------------ */
@@ -66,7 +70,7 @@ nav ul {
   height: 36px;
   position: fixed;
   top: 8px;
-  right: 20px;
+  right: 5%;
   
   a {
     color: $black;
@@ -150,7 +154,9 @@ work-container
   box-shadow: 1px 2px 6px $grey-60;
   border-radius: 10px;
   margin: 0 auto 40px;
+  max-width: 600px;
   width: 90%;
+  transition: 250ms;
   
   .work-thumbnail {
     padding-top: 10px;
@@ -162,15 +168,54 @@ work-container
   
   h2 {
     color: $black;
-    margin: 0 0 5px 10px;
+    padding: 0 0 5px 10px;
   }
   
   p {
     color: $black-sub;
-    margin-left: 10px;
-    padding-bottom: 10px;
+    padding: 0 0 10px 10px;
   }
 }
 
+.work-container:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+/* ------------------------------
+footer
+------------------------------ */
+footer {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.footer-icon-container {
+  margin-bottom: 10px;
+  
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: $blue-100;
+  }
+  
+  .footer-icon {
+    margin-right: 10px;
+  }
+}
+
+/* =================================================================================================
+TB
+================================================================================================= */
+@media screen and (min-width:720px) {
+  
+}
 
 
+  
+  
+  
+  
