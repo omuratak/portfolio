@@ -1,0 +1,112 @@
+// Scss Document
+
+/* =================================================================================================
+SP
+================================================================================================= */
+
+/* ------------------------------
+About Me
+------------------------------ */
+.h1-about {
+  padding-top: 100px;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 90%;
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: $blue-60;
+    text-decoration: dotted underline;
+    text-underline-offset: 1px;
+  }
+}
+
+/* ------------------------------
+button
+------------------------------ */
+.btn-outline {
+  border: 1px solid $blue-100;
+  border-radius: 5px;
+  height: 36px;
+  width: 108px;
+  position: relative;
+  
+  a {
+    color: $blue-100;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 36px;
+    width: 100%;
+  }
+  
+  i {
+    padding-left: 5px;
+  }
+}
+
+.btn-outline:hover{
+  background: $blue-100;
+  
+  a {
+   color: $white;
+  }
+}
+
+/* ------------------------------
+slider
+------------------------------ */
+.profile-img {
+  margin-bottom: 20px;
+  width: 100%;
+  
+  img {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width:1000px) {
+  .h1-about {
+    padding-top: 120px;
+    margin: 0 0 120px 0;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    max-width: 960px;
+    width: 100%;
+    
+    aside,
+    article {
+      width: 400px;
+    }
+  }
+}

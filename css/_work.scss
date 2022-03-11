@@ -41,12 +41,14 @@ header {
   position: fixed;
   height: 52px;
   width: 100%;
+  z-index: 100;
 }
 
 nav ul {
   display: flex;
   margin: 10px 0 10px 5%;
   position: fixed;
+  z-index: 100;
   
   li {    
     a {
@@ -71,6 +73,7 @@ nav ul {
   position: fixed;
   top: 8px;
   right: 5%;
+  z-index: 100;
   
   a {
     color: $black;
