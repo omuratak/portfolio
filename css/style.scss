@@ -1,0 +1,71 @@
+// Scss Document
+
+// Color
+$black: #444;
+$black-sub: #707070;
+$white: #fff;
+$grey-60: #ccc;
+$grey-20: #f5f5f5;
+$blue-100: #0000C8;
+$blue-60: #5D8BF4;
+$blue-20: #DFF6FF;
+
+
+// Font size
+$pc-h1: 500 64px/1.5 'Lato', 'sans-serif';
+$pc-h2: bold 36px/1.5 'Lato', 'sans-serif';
+$pc-h3: 24px/1.5 'Lato', 'sans-serif';
+$text: 16px/1.5 'Lato', 'sans-serif';
+$sub-text: 12px/1.5 'Lato', 'sans-serif';
+$sp-h1: 500 18px/1.5 'Lato', 'sans-serif';
+$sp-h1-lg: 500 24px/1.5 'Lato', 'sans-serif';
+$sp-h2: bold 24px/1.5 'Lato', 'sans-serif';
+$sp-h3: 20px/1.5 'Lato', 'sans-serif';
+
+/* Consistent styling */
+body {
+	font: $text;
+	background: $grey-20;
+	color: $black;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Fade-in contents when loading page */
+#wrapper {
+	width: 100%;
+	animation: wrapper-fadein 1s;
+}
+
+@keyframes wrapper-fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* ------------------------------
+Fade-in by scrolling
+------------------------------ */
+.fade-in {
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+	transform: translate(0, 50px);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+// Import SCSS files
+@import 'work';
+
+

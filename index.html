@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Takahiro Omura</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+
+  <!-- Fade-in by scrolling	--> 
+  <script>
+      $(document).ready(function ($){
+         $(window).scroll(function () {
+           $('.fade-in').each(function () {
+             var scroll = $(window).scrollTop();
+             var offset = $(this).offset().top;
+             var windowHeight = $(window).height();
+             if (scroll > offset - windowHeight + 50) {
+               $(this).addClass("scroll-in");
+             }
+           });
+         });
+      });
+    </script>
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+</head>
+  
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#"><strong><span class="font-blue">Work</span></strong></a></li>
+          <li><a href="https://takaomura.com/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <a href="#">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <h1>Hello, I'm Takahiro Omura.<br><span class="h1-lg">I design for <strong><span class="font-blue">social impact</span></strong>.</span></h1>
+    <main>
+      <article class="work-container">
+        <a href="https://takaomura.com/batonne#">
+          <div class="work-thumbnail"><img src="images/batonne-thumbnail.jpg" alt="Batonneサムネイル"></div>
+          <h2>Food Sharing App Design</h2>
+          <p>Mobile app</p>
+        </a>
+      </article>
+      <article class="work-container">
+        <a href="https://takaomura.com/tms#">
+          <div class="work-thumbnail"><img src="images/tms-thumbnail.jpg" alt="TMSサムネイル"></div>
+          <h2>Donation Page Redesign</h2>
+          <p>Responsive website</p>
+        </a>
+      </article>
+      <article class="work-container">
+        <a href="https://takaomura.com/suisui#">
+          <div class="work-thumbnail"><img src="images/suisui-thumbnail.jpg" alt="suisuiサムネイル"></div>
+          <h2>Water Tracking App Design</h2>
+          <p>Mobile app</p>
+        </a>
+      </article>
+    </main>
+    <footer>
+      <i class="fa-solid fa-envelope"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+</body>
+</html>
