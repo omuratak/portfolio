@@ -35,6 +35,11 @@ Fade-in by scrolling
   opacity: 1;
   transform: translate(0, 0); }
 
+/*
+
+WORK
+
+*/
 /* =================================================================================================
 SP
 ================================================================================================= */
@@ -256,6 +261,11 @@ PC
       grid-area: 1 / 2 / 2 / 3; }
     .work-list .work-suisui {
       grid-area: 2 / 1 / 3 / 2; } }
+/*
+
+ABOUT
+
+*/
 /* =================================================================================================
 SP
 ================================================================================================= */
@@ -339,6 +349,11 @@ PC
     .about aside,
     .about article {
       width: 400px; } }
+/*
+
+BATONNE
+
+*/
 /* =================================================================================================
 SP
 ================================================================================================= */
@@ -553,6 +568,32 @@ Other projects
     box-shadow: 1px 2px 6px #707070;
     width: 40%;
     max-width: 400px; }
+  .other-pj .other-work-container:hover {
+    box-shadow: none; }
+
+/* ------------------------------
+Page top button
+------------------------------ */
+.page-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  z-index: 99; }
+  .page-top a {
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    padding: 12.5px 10px 10px 10px;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s; }
+  .page-top a:hover {
+    opacity: 0.7; }
 
 /* =================================================================================================
 TB
@@ -571,8 +612,8 @@ TB
       right: -280px; }
 
   /* ------------------------------
-process - funnel
------------------------------- */
+  process - funnel
+  ------------------------------ */
   .funnel-flex {
     display: flex;
     flex-wrap: wrap;
@@ -601,23 +642,30 @@ process - funnel
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px; }
-    .intermed-flex .persona {
-      width: 40%;
-      height: 180px; }
-    .intermed-flex .journey {
-      width: 40%; }
-    .intermed-flex .object {
-      width: 40%; }
-    .intermed-flex .object-rel {
-      width: 40%;
-      height: 190px; }
-    .intermed-flex .visual-system {
-      width: 30%;
-      height: 210px; }
-    .intermed-flex .wireframe {
-      width: 30%; }
-    .intermed-flex .hifi {
-      width: 30%; }
+
+  .persona {
+    width: 40%;
+    height: 180px; }
+
+  .journey {
+    width: 40%; }
+
+  .object {
+    width: 40%; }
+
+  .object-rel {
+    width: 40%;
+    height: 190px; }
+
+  .visual-system {
+    width: 30%;
+    height: 210px; }
+
+  .wireframe {
+    width: 30%; }
+
+  .hifi {
+    width: 30%; }
 
   #modal-persona,
   #modal-journey,
@@ -678,5 +726,269 @@ PC
     .batonne-top-main p {
       margin: 0 0 20px 10%; }
     .batonne-top-main .batonne-main-img {
+      top: -150px;
+      right: -250px; } }
+/*
+
+TMS
+
+*/
+/* =================================================================================================
+SP
+================================================================================================= */
+/* ------------------------------
+Font
+------------------------------ */
+.text-lg {
+  font: 700 20px/1.5 "Lato", "sans-serif"; }
+
+/* ------------------------------
+Color
+------------------------------ */
+.tms-orange {
+  color: #e67f3b; }
+
+.tms-orange:after,
+.tms-orange-bg {
+  background: #e67f3b; }
+
+.tms-orange-border {
+  border: 1px solid #e67f3b; }
+
+.tms-orange-underline {
+  text-decoration-color: #F7EBBB; }
+
+/* ------------------------------
+Main visual
+------------------------------ */
+.tms-top-main {
+  background: #e67f3b;
+  color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 40px; }
+  .tms-top-main h1 {
+    padding-top: 120px;
+    margin-bottom: 10px; }
+  .tms-top-main p {
+    margin-left: 5%; }
+  .tms-top-main .tms-main-img {
+    position: absolute;
+    width: 45%;
+    top: 120px;
+    right: 0; }
+
+/* ------------------------------
+Project Summary
+------------------------------ */
+.summary a {
+  color: #5D8BF4;
+  text-decoration: dotted underline;
+  text-underline-offset: 1px; }
+
+/* ------------------------------
+Process 
+------------------------------ */
+.sitemap:after {
+  content: "Site Map"; }
+
+/* ------------------------------
+button
+------------------------------ */
+.tms-orange-bg:hover {
+  background: #fff; }
+  .tms-orange-bg:hover a {
+    color: #e67f3b; }
+
+/* =================================================================================================
+TB
+================================================================================================= */
+@media screen and (min-width: 600px) {
+  /* ------------------------------
+  Main visual
+  ------------------------------ */
+  .tms-top-main {
+    height: 400px;
+    margin-bottom: 40px; }
+    .tms-top-main h1 {
+      padding-top: 140px; }
+    .tms-top-main .tms-main-img {
+      top: 125px;
+      right: 20px; }
+
+  /* ------------------------------
+  Process
+  ------------------------------ */
+  .tms-process-img img {
+    width: 50%;
+    display: block;
+    margin: 0 auto; }
+
+  .survey-list {
+    list-style: inside;
+    text-indent: 5px;
+    margin-bottom: 20px; }
+
+  /* ------------------------------
+  Intermediate products 
+  ------------------------------ */
+  #tms-wrapper .journey,
+  #tms-wrapper .sitemap,
+  #tms-wrapper .visual-system {
+    width: 50%;
+    margin: 0 auto 40px; }
+  #tms-wrapper .visual-system {
+    height: 160px; }
+
+  #modal-journey-tms,
+  #modal-sitemap,
+  #modal-visual-sys-tms {
+    max-width: 1000px; } }
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width: 1000px) {
+  /* ------------------------------
+  main visual
+  ------------------------------ */
+  .tms-top-main {
+    margin: 0 auto 60px;
+    height: 650px; }
+    .tms-top-main h1 {
+      padding-top: 260px;
+      margin: 0 0 20px 10%; }
+    .tms-top-main p {
+      margin: 0 0 20px 10%; }
+    .tms-top-main .tms-main-img {
+      top: 160px;
+      right: 20px; }
+
+  /* ------------------------------
+  Intermediate products 
+  ------------------------------ */
+  #tms-wrapper .visual-system {
+    height: 210px; } }
+/*
+
+SUISUI
+
+*/
+/* =================================================================================================
+SP
+================================================================================================= */
+/* ------------------------------
+Color
+------------------------------ */
+.suisui-blue {
+  color: #0077C7; }
+
+.suisui-blue:after,
+.suisui-blue-bg {
+  background: #0077C7; }
+
+.suisui-blue-border {
+  border: 1px solid #0077C7; }
+
+.suisui-blue-underline {
+  text-decoration-color: #52C9FF; }
+
+/* ------------------------------
+Main visual
+------------------------------ */
+.suisui-top-main {
+  background: #0077C7;
+  color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 40px; }
+  .suisui-top-main h1 {
+    padding-top: 120px;
+    margin-bottom: 10px; }
+  .suisui-top-main p {
+    margin-left: 5%; }
+  .suisui-top-main .suisui-main-img {
+    position: absolute;
+    top: 0;
+    right: -120px; }
+
+/* ------------------------------
+Process 
+------------------------------ */
+.lofi:after {
+  content: "Lo-fi Prototype"; }
+
+.visual-system-suisui:after {
+  content: "Visual System"; }
+
+/* ------------------------------
+button
+------------------------------ */
+.suisui-blue-bg:hover {
+  background: #fff; }
+  .suisui-blue-bg:hover a {
+    color: #0077C7; }
+
+/* =================================================================================================
+TB
+================================================================================================= */
+@media screen and (min-width: 600px) {
+  /* ------------------------------
+  Main visual
+  ------------------------------ */
+  .suisui-top-main {
+    height: 400px;
+    margin-bottom: 40px; }
+    .suisui-top-main h1 {
+      padding-top: 140px; }
+    .suisui-top-main .suisui-main-img {
+      top: -50px;
+      right: -280px; }
+
+  /* ------------------------------
+  Process
+  ------------------------------ */
+  .affinity {
+    width: 50%;
+    margin: 0 auto 40px; }
+
+  /* ------------------------------
+  Intermediate products 
+  ------------------------------ */
+  #suisui-wrapper .lofi {
+    width: 50%;
+    margin: 0 auto 40px; }
+  #suisui-wrapper .visual-system-suisui {
+    width: 90%;
+    margin: 0 auto 40px; }
+
+  #modal-lofi,
+  #modal-visual-sys-suisui {
+    max-width: 1000px; }
+
+  /* ------------------------------
+  Reflection
+  ------------------------------ */
+  .reflection a {
+    color: #5D8BF4;
+    text-decoration: dotted underline;
+    text-underline-offset: 1px; } }
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width: 1000px) {
+  /* ------------------------------
+  main visual
+  ------------------------------ */
+  .suisui-top-main {
+    margin: 0 auto 60px;
+    height: 650px; }
+    .suisui-top-main h1 {
+      padding-top: 260px;
+      margin: 0 0 20px 10%; }
+    .suisui-top-main p {
+      margin: 0 0 20px 10%; }
+    .suisui-top-main .suisui-main-img {
       top: -150px;
       right: -250px; } }

@@ -12,6 +12,10 @@ $blue-20: #DFF6FF;
 $red-100: #EF0107;
 $batonne-green: #207972;
 $batonne-green-20: #B5DFDD;
+$tms-orange: #e67f3b;
+$tms-orange-20: #F7EBBB;
+$suisui-blue: #0077C7;
+$suisui-blue-20: #52C9FF;
 
 
 // Font size
@@ -27,6 +31,7 @@ $sp-h1: 700 24px/1.5 'Lato', 'sans-serif';
 $sp-h1-lg: 700 24px/1.5 'Lato', 'sans-serif';
 $sp-h2: 700 20px/1.5 'Lato', 'sans-serif';
 $sp-h3: 700 18px/1.5 'Lato', 'sans-serif';
+$text-lg: 700 20px/1.5 'Lato', 'sans-serif';
 
 /* Consistent styling */
 body {
@@ -75,5 +80,7 @@ Fade-in by scrolling
 @import 'work';
 @import 'about';
 @import 'batonne';
+@import 'tms';
+@import 'suisui';
 
 

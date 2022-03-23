@@ -1,5 +1,12 @@
 // Scss Document
 
+/*
+
+BATONNE
+
+*/
+
+
 /* =================================================================================================
 SP
 ================================================================================================= */
@@ -272,6 +279,39 @@ Other projects
     width: 40%;
     max-width: 400px;
   }
+  
+  .other-work-container:hover {
+    box-shadow: none;
+  }
+}
+
+/* ------------------------------
+Page top button
+------------------------------ */
+.page-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  z-index: 99; 
+
+  a {
+    background: $black;
+    color: $white;
+    text-decoration: none;
+    padding: 12.5px 10px 10px 10px;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
 }
 
 /* =================================================================================================
@@ -295,7 +335,7 @@ TB
     }
   }
   
-    /* ------------------------------
+  /* ------------------------------
   process - funnel
   ------------------------------ */
   .funnel-flex {
@@ -334,37 +374,37 @@ TB
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
+  }
     
-    .persona {
-      width: 40%;
-      height: 180px;
-    }
-    
-    .journey {
-      width: 40%;
-    }
-    
-    .object {
-      width: 40%;
-    }
-    
-    .object-rel {
-      width: 40%;
-      height: 190px;
-    }
-    
-    .visual-system {
-      width: 30%;
-      height: 210px;
-    }
-    
-    .wireframe {
-      width: 30%;
-    }
-    
-    .hifi {
-      width: 30%;
-    }
+  .persona {
+    width: 40%;
+    height: 180px;
+  }
+
+  .journey {
+    width: 40%;
+  }
+
+  .object {
+    width: 40%;
+  }
+
+  .object-rel {
+    width: 40%;
+    height: 190px;
+  }
+
+  .visual-system {
+    width: 30%;
+    height: 210px;
+  }
+
+  .wireframe {
+    width: 30%;
+  }
+
+  .hifi {
+    width: 30%;
   }
   
   #modal-persona,

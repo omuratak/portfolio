@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donation Page Redesign | Takahiro Omura</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"][href!="#modal-journey-tms"][href!="#modal-sitemap"][href!="#modal-visual-sys-tms"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+
+  <!-- Fade-in by scrolling	--> 
+  <script>
+      $(document).ready(function ($){
+         $(window).scroll(function () {
+           $('.fade-in').each(function () {
+             var scroll = $(window).scrollTop();
+             var offset = $(this).offset().top;
+             var windowHeight = $(window).height();
+             if (scroll > offset - windowHeight + 50) {
+               $(this).addClass("scroll-in");
+             }
+           });
+         });
+      });
+    </script>
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+  <!-- slick	--> 
+  <script>
+    $(document).ready(function(){
+      $('.profile-slider').slick({
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        dots: false,
+        arrows: false,
+        fade: true
+      });
+    });
+  </script>
+  
+</head>
+  
+<body>  
+  <div id="tms-wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com">Work</a></li>
+          <li><a href="https://takaomura.com/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <a href="#">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <div class="tms-top-main">
+      <h1>Donation Page<br>Redesign</h1>
+      <p>Web design, UX research</p>
+      <img class="tms-main-img" src="../images/tms/tms-top-main.png" alt="トップイメージ">
+    </div>
+    <main class="work-main">
+      <article class="summary">
+        <h2 class="work-h2 tms-orange">Project Summary</h2>
+        <section>
+          <h3>Background</h3>
+          <p><a href="https://www.npo-tms.or.jp/" target="_blank">Tokyo Mental Health Square (TMS) <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a> is a non-profit organization in Tokyo that provides mental health services to those in need, for a low cost / free of charge, and <strong class="highlight tms-orange-underline">needed help fundraising</strong>.</p>
+        </section>
+        <section>
+          <h3>Question</h3>
+          <p>How might we redesign the donor experience in order to increase donations for TMS?</p>
+        </section>
+        <section>
+          <h3>Solution</h3>
+          <p>I redesigned and coded a responsive donation page for TMS that creates a better experience for potential donors visiting the website.</p>
+        </section>
+      </article>
+      <article class="context">
+        <h2 class="work-h2 tms-orange">Context</h2>
+        <p>The earlier half of this project (research phase) was part of a pro bono project between TMS and my previous employer (ZS Associates) that I led, with 2-3 other team members. The latter half (design phase) was part of a school project that I later took up. Throughout both phases, we closely communicated with TMS.</p>
+      </article>
+      <article class="process">
+        <h2 class="work-h2 tms-orange">Process</h2>
+        <section class="process-desc">
+          <p>As stated above, this project was conducted in two separate phases. In the first phase, we conducted user interviews to understand how potential donors decide to donate to a cause. In the second phase, I designed and implemented the donation page. I also evaluated the design through a quantitative survey, to test the effectiveness of the design. </p>
+          <div class="tms-process-img"><img src="../images/tms/tms-process.svg" alt="TMS project process image"></div>
+        </section>
+        <section class="understand-define">
+          <h3>1. Understand and Define</h3>
+          <p>Our team recruited and interviewed 13 subjects (20s-50s, with or without previous donation experience) to understand the drivers and barriers to donating to a cause. From the subjects who did not have previous experience donating, <strong class="highlight tms-orange-underline">we found 3 key barriers to donation: (1) lack of trust towards the organization, (2) lack of transparency, and (3) cumbersome payment process</strong>.</p>
+          <div class="tms-insight-img"><img src="../images/tms/tms-insight.svg" alt="TMS insight image"></div>
+          <p>Based on these barriers, as well as information from subjects with previous donation experience, we created a donor journey map to understand where and how the donation page can play a role in the entire donor journey. For this project, we focused on the consideration stage of the journey. </p>
+          <div class="journey intermed"><a href="#modal-journey-tms" rel="modal:open"><img src="../images/tms/tms-journey.svg" alt="TMS journey image"></a></div>
+          <p>We concluded that for the donation page to encourage potential donors to donate, we need to craft a story about TMS that builds:</p>
+          <ol>
+            <li><span class="list-item">Empathy & sense of urgency about the cause</span></li>
+            <li><span class="list-item">Trust towards the organization (through past outcomes & transparency)</span></li>
+            <li><span class="list-item">Sense of meaningfulness (i.e. “What I contribute matters”)</span></li>
+          </ol>
+        </section>
+        <section class="design-evaluate">
+          <h3>2. Design and Evaluate</h3>
+          <p>We thought that having a one pager that navigates the user through our story was the simplest way to get our message across, and created a site map accordingly.</p>
+          <div class="sitemap intermed"><a href="#modal-sitemap" rel="modal:open"><img src="../images/tms/tms-sitemap.svg" alt="TMS site map image"></a></div>
+          <p>Although we want users to empathize with the cause, we also wanted to make sure that there was an air of positivity and forwardness, so that users can become deeply empathetic but also positive that TMS is solving the issue of mental health for a better future.</p>
+          <p>Hence, we intentionally chose light & warm colors to express “warmth” (yellow ~ orange for main colors), while also taking into account the homepage’s main color (orange). We kept the background white for a simple / minimal look. We also wanted to give the page a sleek and modern look to make sure users understand that TMS is a forward-looking organization. The resulting visual system is below:</p>
+          <div class="visual-system intermed"><a href="#modal-visual-sys-tms" rel="modal:open"><img src="../images/tms/tms-visual-system.svg" alt="TMS visual system image"></a></div>
+          <p>Based on the visual system and sitemap, I created the website design and implemented it using HTML/CSS/Javascript. (It would have been best to conduct user testing before I implemented the website, but that was not possible due to the deadline of the school project.)</p>
+          <p>After implementing the website, I conducted a quantitative survey (n = 20) to test the hypothesis that through the donation page, potential donors will (1) empathize with the cause, (2) trust the organization, and (3) show an intention to donate. We found that:</p>
+          <ul class="survey-list">
+            <li><span class="text-lg">85%</span> of respondents empathized with the cause</li>
+            <li><span class="text-lg">65%</span> of respondents trusted the organization</li>
+            <li><span class="text-lg">45%</span> of respondents were likely to donate</li>
+          </ul>
+          <p><strong class="highlight tms-orange-underline">The results did support my hypothesis, but they need to be taken with a grain of salt</strong>, due to (1) low sample size, and (2) bias that all of the respondents are my friends/acquaintances who may have responded favorably. (I made the survey anonymous to try to alleviate the bias.)</p>
+          <p>Additionally, in order to truly test its effectiveness, we would need to put this out into the real world and look into the conversion rates, etc.</p>
+        </section>
+        <div class="btn-fill tms-orange-bg tms-orange-border"><a href="http://tokyo-d-plex.com/~2110oomura/donate" target="_blank">See the donation page<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="reflection">
+        <h2 class="work-h2 tms-orange">Reflection</h2>
+        <p><strong class="highlight tms-orange-underline">The website itself is only one part of the whole donor journey.</strong> Effectively reaching potential donors through various marketing efforts, as well as nurturing the relationship after users become donors through continuous communication are just as important, and will need to be addressed.</p>
+        <p>From this project, I worked directly with the organization, and  learned to communicate about design with a non-design audience.</p>
+        <p>I am currently working with the organization to integrate this page into their organization website.</p>
+      </article>
+    </main>
+    <aside class="other-pj">
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 tms-orange">Other Projects</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms other-work-container">
+            <a href="https://takaomura.com/batonne">
+              <div class="work-thumbnail"><img src="../images/batonne/batonne-thumbnail.jpg" alt="Batonneサムネイル"></div>
+              <h3>Food Sharing App Design</h3>
+              <p>Mobile app</p>
+            </a>
+          </div>
+          <div class="work-container work-suisui other-work-container">
+            <a href="https://takaomura.com/suisui">
+              <div class="work-thumbnail"><img src="../images/suisui/suisui-thumbnail.jpg" alt="suisuiサムネイル"></div>
+              <h3>Water Tracking App Design</h3>
+              <p>Mobile app</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-journey-tms" class="modal"><img src="../images/tms/tms-journey.svg" alt="TMS journey image"></div>
+  <div id="modal-visual-sys-tms" class="modal"><img src="../images/tms/tms-visual-system.svg" alt="Batonne visual system image"></div>
+  <div id="modal-sitemap" class="modal"><img src="../images/tms/tms-sitemap.svg" alt="Batonne site map image"></div>
+  
+  
+  <!--　Button to go to the top of the page	-->
+	<div class="page-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+  
+</body>
+</html>

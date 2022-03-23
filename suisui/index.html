@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Tracking App Design | Takahiro Omura</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"][href!="#modal-lofi"][href!="#modal-visual-sys-suisui"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+
+  <!-- Fade-in by scrolling	--> 
+  <script>
+      $(document).ready(function ($){
+         $(window).scroll(function () {
+           $('.fade-in').each(function () {
+             var scroll = $(window).scrollTop();
+             var offset = $(this).offset().top;
+             var windowHeight = $(window).height();
+             if (scroll > offset - windowHeight + 50) {
+               $(this).addClass("scroll-in");
+             }
+           });
+         });
+      });
+    </script>
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+  <!-- slick	--> 
+  <script>
+    $(document).ready(function(){
+      $('.profile-slider').slick({
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        dots: false,
+        arrows: false,
+        fade: true
+      });
+    });
+  </script>
+  
+</head>
+  
+<body>  
+  <div id="suisui-wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com">Work</a></li>
+          <li><a href="https://takaomura.com/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <a href="#">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <div class="suisui-top-main">
+      <h1>Water Tracking<br>App Design</h1>
+      <p>UI/UX design, UX research</p>
+      <img class="suisui-main-img" src="../images/suisui/suisui-top-main.png" alt="トップイメージ">
+    </div>
+    <main class="work-main">
+      <article class="summary">
+        <h2 class="work-h2 suisui-blue">Project Summary</h2>
+        <section>
+          <h3>Background</h3>
+          <p>Plastic bottles in Japan have a high recycle percentage, but it’s still more eco-friendly to not buy plastic bottles in the first place. Additionally, health benefits of drinking water are not well established in Japan yet.</p>
+        </section>
+        <section>
+          <h3>Question</h3>
+          <p>How might we help people <strong class="highlight suisui-blue-underline">develop a healthy and eco-friendly habit of drinking water using their own bottles</strong> (vs. buying a water bottle)?</p>
+        </section>
+        <section>
+          <h3>Solution</h3>
+          <p>I designed a gamified water app that helps users track their water intake, as well as find nearby water fountains.</p>
+        </section>
+      </article>
+      <article class="context">
+        <h2 class="work-h2 suisui-blue">Context</h2>
+        <p>This project was a personal side project, so I was free to choose any topic. I wanted to tackle the environmental crisis at an individual level: <strong class="highlight suisui-blue-underline">how can we, as citizens of earth, partake in eco-friendly behaviors more?</strong></p>
+      </article>
+      <article class="process">
+        <h2 class="work-h2 suisui-blue">Process</h2>
+        <section class="process-desc">
+          <p>I followed the human centered design approach. I first conducted user interviews to understand eco-friendly behaviors, defined the design problem, and then designed and tested the solution.</p>
+          <div class="hcd-process-img"><img src="../images/hcd-process.svg" alt="HCD process image"></div>
+        </section>
+        <section class="understand-define">
+          <h3>1. Understand and Define</h3>
+          <p>We first conducted user interviews (n = 3) to understand eco-friendly behaviors: what kinds of behaviors do people consider “eco-friendly”? What motivates or inhibits eco-friendly behaviors?</p>
+          <p>After the interview, I created an affinity diagram to qualitatively analyze the results.</p>
+          <div class="affinity"><img src="../images/suisui/suisui-affinity-diagram.png" alt="affinity diagram image"></div>
+          <p>From the affinity diagraming exercise, I derived two key insights:</p>
+          <ol>
+            <li><span class="list-item">Only a handful of behaviors were consciously labeled as “eco-friendly” in Japan: e.g. conserving electricity, using “my bags” (reusable grocery bags) and “my bottles” (personal water bottles)</span></li>
+            <li><span class="list-item">It’s difficult to be “eco-friendly” if such behaviors lower their QoL → Being “eco-friendly” itself may not be a strong enough incentive; users may need something “more” e.g. being healthy</span></li>
+          </ol>
+          <p>Based on the user research, I came up with the idea of <strong class="highlight suisui-blue-underline">“tracking your water intake to be healthy & eco-friendly”.</strong></p>
+          <ol>
+            <li><span class="list-item">Users buy their own water bottles to be more economical and more eco-friendly</span></li>
+            <li><span class="list-item">Users have experience buying their own water bottles, but fail to continue using it</span></li>
+            <li><span class="list-item">Users end up buying bottled beverages because they run out of water filled in their own bottles</span></li>
+          </ol>
+          <p>Based on the research, I became confident of my idea for a “water tracking app”, and defined the design problem as such: <strong class="highlight suisui-blue-underline">How might we help people develop a healthy and eco-friendly habit of drinking water using their own bottles (vs. buying a water bottle)?</strong></p>
+          <p>In thinking of features for the application that can solve the design problem, social comparison & gamification were two ideas that I came up with to build habits and change behavior for the better. Hence, aside from the most basic feature of inputting and tracking your daily water intake, I decided to have additional features (e.g. leaderboard, game) in the app.</p>
+        </section>
+        <section class="design-evaluate">
+          <h3>2. Design and Evaluate</h3>
+          <p>I first sketched a lo-fi prototype and tested the concept against potential users (n = 2).</p>
+          <div class="lofi intermed"><a href="#modal-lofi" rel="modal:open"><img src="../images/suisui/suisui-lofi.png" alt="suisui lo-fi prototype image"></a></div>
+          <p>Interestingly, I found that having so many “gamification” features were “too much”, and it was not well received. Having a "leaderboard" felt a little overwhelming. Hence,  I decided to tone down on the gamification feature and removed the “leaderboard” to simplify the overall app.</p>
+          <p>In parallel, I defined the visual system for the app. The concept was: simple, clean, and aesthetic.</p>
+          <div class="visual-system-suisui intermed"><a href="#modal-visual-sys-suisui" rel="modal:open"><img src="../images/suisui/suisui-visual-system.svg" alt="suisui visual system image"></a></div>
+          <p>Finally, I put together a hi-fi prototype using the lo-fi prototype and visual system.</p>
+        </section>
+        <div class="btn-fill suisui-blue-bg suisui-blue-border"><a href="https://www.figma.com/proto/QfgtsejJR2PW3tTa9YYxJP/suisui?node-id=205%3A2585&scaling=scale-down&page-id=0%3A1&starting-point-node-id=205%3A2585&show-proto-sidebar=1" target="_blank">See the final prototype<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="reflection">
+        <h2 class="work-h2 suisui-blue">Reflection</h2>
+        <p>One of the most important aspects about this app <strong class="highlight suisui-blue-underline">“habit building” cannot be tested easily through prototypes created on prototyping tools (e.g. Figma)</strong>. Rather, it needs to be tested over time to determine whether users can actually build habits.</p>
+        <p>Another important thing to keep in mind is that the <a href="https://www.amazon.com/Best-Interface-No-brilliant-technology-ebook/dp/B00T0ER57I/ref=sr_1_1?keywords=best+interface+is+no+interface&qid=1648042457&sprefix=best+interface+is+no%2Caps%2C338&sr=8-1" target="_blank">“best interface is no interface” <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>. One of the biggest barriers to continue using this app is that the user needs to manually input their own water intake. It would be a much better user experience if we can automate the water intake input (e.g. “smart” water bottle that automatically records water intake). </p>
+      </article>
+    </main>
+    <aside class="other-pj">
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 suisui-blue">Other Projects</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms other-work-container">
+            <a href="https://takaomura.com/tms">
+              <div class="work-thumbnail"><img src="../images/tms/tms-thumbnail.jpg" alt="TMSサムネイル"></div>
+              <h3>Donation Page Redesign</h3>
+              <p>Responsive website</p>
+            </a>
+          </div>
+          <div class="work-container work-batonne other-work-container">
+            <a href="https://takaomura.com/batonne">
+              <div class="work-thumbnail"><img src="../images/batonne/batonne-thumbnail.jpg" alt="Batonneサムネイル"></div>
+              <h3>Food Sharing App Design</h3>
+              <p>Mobile app</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-lofi" class="modal"><img src="../images/suisui/suisui-lofi.png" alt="suisui lo-fi prototype image"></div>
+  <div id="modal-visual-sys-suisui" class="modal"><img src="../images/suisui/suisui-visual-system.svg" alt="suisui visual system image"></div>
+  
+  <!--　Button to go to the top of the page	-->
+	<div class="page-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+  
+</body>
+</html>

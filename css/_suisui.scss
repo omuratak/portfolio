@@ -1,0 +1,176 @@
+// Scss Document
+
+/*
+
+SUISUI
+
+*/
+
+
+/* =================================================================================================
+SP
+================================================================================================= */
+
+/* ------------------------------
+Color
+------------------------------ */
+.suisui-blue {
+  color: $suisui-blue;
+}
+
+.suisui-blue:after,
+.suisui-blue-bg {
+  background: $suisui-blue;
+}
+
+.suisui-blue-border {
+  border: 1px solid $suisui-blue;
+}
+
+.suisui-blue-underline {
+  text-decoration-color: $suisui-blue-20;
+}
+
+/* ------------------------------
+Main visual
+------------------------------ */
+.suisui-top-main {
+  background: $suisui-blue;
+  color: $grey-20;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 40px;
+  
+  h1 {
+    padding-top: 120px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-left: 5%;
+  }
+  
+  .suisui-main-img {
+    position: absolute;
+    top: 0;
+    right: -120px;
+  } 
+}
+
+/* ------------------------------
+Process 
+------------------------------ */
+.lofi:after {
+  content: "Lo-fi Prototype";  
+}
+
+.visual-system-suisui:after {
+  content: "Visual System";
+}
+
+/* ------------------------------
+button
+------------------------------ */
+.suisui-blue-bg:hover{
+  background: $white;
+  
+  a {
+   color: $suisui-blue;
+  }
+}
+
+/* =================================================================================================
+TB
+================================================================================================= */
+@media screen and (min-width:600px) {
+  /* ------------------------------
+  Main visual
+  ------------------------------ */
+  .suisui-top-main {
+    height: 400px;
+    margin-bottom: 40px;
+
+    h1 {
+      padding-top: 140px;
+    }
+
+    .suisui-main-img {
+      top: -50px;
+      right: -280px;
+    }
+  }
+  
+  /* ------------------------------
+  Process
+  ------------------------------ */
+  .affinity {
+    width: 50%;
+    margin: 0 auto 40px;
+  }
+  
+  /* ------------------------------
+  Intermediate products 
+  ------------------------------ */
+  #suisui-wrapper {
+    .lofi {
+      width: 50%;
+      margin: 0 auto 40px;
+    }
+    
+    .visual-system-suisui {
+      width: 90%;
+      margin: 0 auto 40px;
+    }
+  }
+  
+  #modal-lofi,
+  #modal-visual-sys-suisui {
+    max-width: 1000px;
+  }
+  
+  /* ------------------------------
+  Reflection
+  ------------------------------ */
+  .reflection {
+    a {
+      color: $blue-60;
+      text-decoration: dotted underline;
+      text-underline-offset: 1px;
+    }
+  }
+}
+
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width:1000px) {
+  /* ------------------------------
+  main visual
+  ------------------------------ */
+  .suisui-top-main {
+    margin: 0 auto 60px;
+    height: 650px;
+    
+    h1 {
+      padding-top: 260px;
+      margin: 0 0 20px 10%;
+    }
+    
+    p {
+      margin: 0 0 20px 10%;
+    }
+    
+    .suisui-main-img {
+      top: -150px;
+      right: -250px;
+    }
+  }
+}
+
+
+
+  
+  
+  
+  
