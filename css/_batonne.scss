@@ -262,16 +262,16 @@ Other projects
     padding: 0 0 5px 10px;
     margin: 0;
   }
-}
+  
+  .other-flex {
+    display: flex;
+  }
 
-.other-flex {
-  display: flex;
-}
-
-.work-container {
-  box-shadow: 1px 2px 6px $black-sub;
-  width: 40%;
-  max-width: 400px;
+  .other-work-container {
+    box-shadow: 1px 2px 6px $black-sub;
+    width: 40%;
+    max-width: 400px;
+  }
 }
 
 /* =================================================================================================
