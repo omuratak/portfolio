@@ -26,6 +26,12 @@ h3 {
   margin-bottom: 5px;
 }
 
+.highlight {
+  font-weight: 500;
+  text-decoration: underline 4px;
+  text-underline-offset: 1px;
+}
+
 /* ------------------------------
 Color
 ------------------------------ */
@@ -33,17 +39,29 @@ Color
   color: $batonne-green;
 }
 
-.batonne-green:after {
+.batonne-green:after,
+.batonne-green-bg {
   background: $batonne-green;
+}
+
+.batonne-green-border {
+  border: 1px solid $batonne-green;
+}
+
+.batonne-green-underline {
+  text-decoration-color: $batonne-green-20;
 }
 
 /* ------------------------------
 Main visual
 ------------------------------ */
 .batonne-top-main {
+  background: $batonne-green;
+  color: $grey-20;
   position: relative;
   overflow: hidden;
   height: 300px;
+  margin-bottom: 40px;
   
   h1 {
     padding-top: 120px;
@@ -56,7 +74,7 @@ Main visual
   
   .batonne-main-img {
     position: absolute;
-    top: -50px;
+    top: 0;
     right: -120px;
   }
 }
@@ -64,7 +82,8 @@ Main visual
 /* ------------------------------
 Main 
 ------------------------------ */
-.work-main {
+.work-main,
+.other-pj-wrapper {
   margin: 0 auto;
   width: 90%;
   
@@ -115,6 +134,7 @@ Process
   border-radius: 10px;
   margin-bottom: 40px;
   position: relative;
+  pointer-events: none;
   
   img {
     padding: 2.5%;
@@ -171,7 +191,265 @@ Process
   content: "Payment ~ Pick-up UI Version 3";
 }
 
+/* ------------------------------
+button
+------------------------------ */
+.btn-fill {
+  border-radius: 5px;
+  height: 36px;
+  width: 200px;
+  position: relative;
+  
+  a {
+    color: $white;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 36px;
+    width: 100%;
+  }
+  
+  i {
+    padding-left: 5px;
+  }
+}
+
+.batonne-green-bg:hover{
+  background: $white;
+  
+  a {
+   color: $batonne-green;
+  }
+}
+
+/* ------------------------------
+Aside 
+------------------------------ */
+.other-pj {
+  margin: 0 auto;
+  width: 90%;
+  
+  h3 {
+    color: $black;
+    padding: 0 0 5px 10px;
+    margin: 0;
+  }
+}
+
+/* ------------------------------
+Other projects
+------------------------------ */
+.other-pj {
+  background: $grey-60;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  width: 100%;
+
+  h2 {
+    color: $black;
+    margin-bottom: 40px;
+  }
+
+  h2:after {
+    display: none;
+  }
+
+  h3 {
+    padding: 0 0 5px 10px;
+    margin: 0;
+  }
+}
+
+.other-flex {
+  display: flex;
+}
+
+.work-container {
+  box-shadow: 1px 2px 6px $black-sub;
+  width: 40%;
+  max-width: 400px;
+}
+
+/* =================================================================================================
+TB
+================================================================================================= */
+@media screen and (min-width:600px) {
+  /* ------------------------------
+  Main visual
+  ------------------------------ */
+  .batonne-top-main {
+    height: 400px;
+    margin-bottom: 40px;
+
+    h1 {
+      padding-top: 140px;
+    }
+
+    .batonne-main-img {
+      top: -50px;
+      right: -280px;
+    }
+  }
+  
+    /* ------------------------------
+  process - funnel
+  ------------------------------ */
+  .funnel-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+    .funnel-text {
+      width: 60%;
+    }
+    
+    .funnel-img {
+      width: 30%;
+    }
+  }
+  
+  .hcd-process-img img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* ------------------------------
+  Intermediate products 
+  ------------------------------ */
+  .intermed {
+    margin-bottom: 60px;
+    pointer-events: auto;
+  }
+  
+  .intermed:hover {
+    opacity: 0.7;
+  }
+  
+  .intermed-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+    .persona {
+      width: 40%;
+      height: 180px;
+    }
+    
+    .journey {
+      width: 40%;
+    }
+    
+    .object {
+      width: 40%;
+    }
+    
+    .object-rel {
+      width: 40%;
+      height: 190px;
+    }
+    
+    .visual-system {
+      width: 30%;
+      height: 210px;
+    }
+    
+    .wireframe {
+      width: 30%;
+    }
+    
+    .hifi {
+      width: 30%;
+    }
+  }
+  
+  #modal-persona,
+  #modal-journey,
+  #modal-object,
+  #modal-object-rel,
+  #modal-visual-sys,
+  #modal-wireframe,
+  #modal-hifi,
+  #modal-cart-v1,
+  #modal-cart-v2,
+  #modal-cart-v3 {
+    max-width: 1000px;
+  }
+  
+  .blocker,
+  .modal {
+    z-index: 100;
+  }
+  
+  .cart-v3 {
+    margin-bottom: 80px;
+  }
+}
 
 
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width:1000px) {
+  .work-main,
+  .other-pj-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    
+    h2 {
+      font: $pc-h2;
+    }
+    
+    h3 {
+      font: $pc-h3;
+      margin-bottom: 10px;
+    }
+    
+    .work-h2:after {
+      width: 60px;
+    }
+    
+    article {
+      margin-bottom: 80px;
+    }
+    
+    ol {
+      text-indent: -15px;
+      margin-left: 15px;
+      
+      li:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  /* ------------------------------
+  main visual
+  ------------------------------ */
+  .batonne-top-main {
+    margin: 0 auto 60px;
+    height: 650px;
+    
+    h1 {
+      padding-top: 260px;
+      margin: 0 0 20px 10%;
+    }
+    
+    p {
+      margin: 0 0 20px 10%;
+    }
+    
+    .batonne-main-img {
+      top: -150px;
+      right: -250px;
+    }
+  }
+  
+
+}
 
 

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
   <link rel="stylesheet" href="../css/style.css">
   
   <!-- font -->
@@ -21,11 +22,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
   <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
   <!-- Smooth scrolling --> 
   <script>
       $(function(){
-       $('a[href^="#"]').click(function() {
+       $('a[href^="#"][href!="#modal-persona"][href!="#modal-journey"][href!="#modal-object"][href!="#modal-object-rel"][href!="#modal-visual-sys"][href!="#modal-wireframe"][href!="#modal-hifi"][href!="#modal-cart-v1"][href!="#modal-cart-v2"][href!="#modal-cart-v3"]').click(function() {
           var href= $(this).attr("href");
           var target = $(href == "#" || href == "" ? 'html' : href);
           var position = target.offset().top;       
@@ -91,7 +94,7 @@
   
 </head>
   
-<body>
+<body>  
   <div id="batonne-wrapper">
     <header>
       <nav>
@@ -117,7 +120,7 @@
         <h2 class="work-h2 batonne-green">Project Summary</h2>
         <section>
           <h3>Background</h3>
-          <p>Food waste is a major social issue, which causes both (1) economic loss and (2) negative impact on the environment. In Japan, approximately 8% of edible food are being disposed (2016).</p>
+          <p>Food waste is a major social issue, which causes both (1) economic loss and (2) negative impact on the environment. In Japan, approximately <strong class="highlight batonne-green-underline">8% of edible food are being disposed</strong> (2016).</p>
         </section>
         <section>
           <h3>Question</h3>
@@ -125,7 +128,7 @@
         </section>
         <section>
           <h3>Solution</h3>
-          <p>We designed a “food sharing” app where users can buy “food that is still fresh and edible but needs to be thrown away soon” for cheaper from restaurants and grocery stores.</p>
+          <p>We designed a <strong class="highlight batonne-green-underline">“food sharing” app</strong> where users can buy “food that is still fresh and edible but needs to be thrown away soon” for cheaper from restaurants and grocery stores.</p>
         </section>
       </article>
       <article class="context">
@@ -136,24 +139,30 @@
       <article class="process">
         <h2 class="work-h2 batonne-green">Process</h2>
         <section class="process-desc">
-          <p>Given the assignment, we started off ideating. We gathered issues we wanted to solve, and eventually landed on “food waste”. We hypothesized that “creating a platform where restaurants can share their food cheaply before disposing them to interested users can help reduce food waste”.</p>
-          <p>We first did a quick desk research to understand the “food waste” issue better. We found that indeed, food waste is a big issue: 33% of food shipped are being disposed, and out of that, 23% are still edible (= 8% of food shipped are being thrown away even though it is still edible). We became confident that addressing “food lost” can have a large impact on this issue.</p>
-          <div class="funnel-img"><img src="../images/batonne/batonne-funnel.svg" alt="funnel image"></div>
+          <div class="funnel-flex">
+            <div class="funnel-text">
+              <p>Given the assignment, we started off ideating. We gathered issues we wanted to solve, and eventually landed on “food waste”. We hypothesized that <strong class="highlight batonne-green-underline">“creating a platform where restaurants can share their food cheaply before disposing them to interested users can help reduce food waste”.</strong></p>
+              <p>We first did a quick desk research to understand the “food waste” issue better. We found that indeed, food waste is a big issue: 33% of food shipped are being disposed, and out of that, 23% are still edible (= 8% of food shipped are being thrown away even though it is still edible). We became confident that addressing “food lost” can have a large impact on this issue.</p>
+            </div>
+            <div class="funnel-img"><img src="../images/batonne/batonne-funnel.svg" alt="funnel image"></div>
+          </div>
           <p>From there, we followed the human centered design approach, while also keeping in mind the 5 elements of user experience. </p>
           <div class="hcd-process-img"><img src="../images/hcd-process.svg" alt="HCD process image"></div>
         </section>
         <section class="understand-define">
           <h3>1. Understand and Define</h3>
           <p>We first wanted to understand the current experience around eating, in order to highlight their needs that our app can potentially fulfill. We conducted quick user interviews (n = 2) and derived a user persona as well as a user journey. (In hindsight, I think we should have directly tested our concept against these users to see if our hypothesis was on the right track.)</p>
-          <div class="persona intermed"><img src="../images/batonne/batonne-persona.png" alt="Batonne persona image"></div>
-          <div class="journey intermed"><img src="../images/batonne/batonne-journey.png" alt="Batonne journey image"></div>
-          <p>After we clarified the users’ current experience through user modeling,  we derived three key insights:</p>
+          <div class="intermed-flex">
+            <div class="persona intermed"><a href="#modal-persona" rel="modal:open"><img src="../images/batonne/batonne-persona.png" alt="Batonne persona image"></a></div>
+            <div class="journey intermed"><a href="#modal-journey" rel="modal:open"><img src="../images/batonne/batonne-journey.png" alt="Batonne journey image"></a></div>
+          </div>
+          <p>After we clarified the users’ current experience through user modeling,  we derived <strong class="highlight batonne-green-underline">three key insights</strong>:</p>
           <ol>
             <li><span class="list-item">Users in central Tokyo face a lack of options when looking to buy groceries even if they want to cook, and would like to be able to buy groceries from nearby restaurants</span></li>
             <li><span class="list-item">Users usually decide whether to cook or not first before proceeding, but actually would like to switch between the two options more flexibly</span></li>
             <li><span class="list-item">Eating out / ordering delivery is costly and not financially sustainable, and would like to have cheaper options other than convenience store food</span></li>
           </ol>
-          <p>These insights supported our hypothesis, and also informed us of key features that that app should have.<br>We came up with the following features:</p>
+          <p>These insights supported our hypothesis, and also informed us of key features that the app should have.<br>We came up with the following features:</p>
           <ol>
             <li><span class="list-item">Look for food (both cooked and raw) through browsing and searching features</span></li>
             <li><span class="list-item">Mark and save restaurants through a favorite feature</span></li>
@@ -163,22 +172,26 @@
         </section>
         <section class="design-evaluate">
           <h3>2. Design and Evaluate</h3>
-          <p>Given the features we decided on, we defined the information architecture. We first created objects, their properties, and actions. After that, we organized the relationships between the objects and their views (collection vs. single).</p>
-          <div class="object intermed"><img src="../images/batonne/batonne-object.svg" alt="Batonne object image"></div>
-          <div class="object-rel intermed"><img src="../images/batonne/batonne-object-rel.svg" alt="Batonne object relationship image"></div>
-          <p>Based on the information architecture, we put together a wireframe, and put it through a round of user testing (n = 3) to understand if there were any usability issues. While putting together the wireframe, we also defined the visual system. Putting together the wireframe and visual system, we put together a hi-fi prototype.</p>
-          <div class="visual-system intermed"><img src="../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></div>
-          <div class="wireframe intermed"><img src="../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></div>
-          <div class="hifi intermed"><img src="../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></div>
-          <p>We conducted three rounds of user testing, each time assessing and refining the design based on usability issues we found. We faced the most difficulty designing and refining the payment ~ navigation ~ pick-up UI for our edge case: ordering multiple items from different restaurants. </p>
+          <p>Given the features we decided on, we defined the <strong class="highlight batonne-green-underline">information architecture</strong>. We first created objects, their properties, and actions. After that, we organized the relationships between the objects and their views (collection vs. single).</p>
+          <div class="intermed-flex">
+            <div class="object intermed"><a href="#modal-object" rel="modal:open"><img src="../images/batonne/batonne-object.svg" alt="Batonne object image"></a></div>
+            <div class="object-rel intermed"><a href="#modal-object-rel" rel="modal:open"><img src="../images/batonne/batonne-object-rel.svg" alt="Batonne object relationship image"></a></div>
+          </div>
+          <p>Based on the information architecture, we put together a <strong class="highlight batonne-green-underline">wireframe</strong>, and put it through a round of user testing (n = 3) to understand if there were any usability issues. While putting together the wireframe, we also defined the visual system. Putting together the wireframe and visual system, we put together a <strong class="highlight batonne-green-underline">hi-fi prototype</strong>.</p>
+          <div class="intermed-flex">
+            <div class="visual-system intermed"><a href="#modal-visual-sys" rel="modal:open"><img src="../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></a></div>
+            <div class="wireframe intermed"><a href="#modal-wireframe" rel="modal:open"><img src="../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></a></div>
+            <div class="hifi intermed"><a href="#modal-hifi" rel="modal:open"><img src="../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></a></div>
+          </div>
+          <p>We conducted three rounds of <strong class="highlight batonne-green-underline">user testing</strong>, each time assessing and refining the design based on usability issues we found. We faced the most difficulty designing and refining the payment ~ navigation ~ pick-up UI for our edge case: ordering multiple items from different restaurants. </p>
           <p>We first set up the UI so that the user would pay, navigate, and pick up separately for each restaurant. However, we quickly realized that the user would need to go through the payment screen multiple times for each restaurant, which would be quite annoying. </p>
-          <div class="cart-v1 intermed"><img src="../images/batonne/batonne-cart-v1.png" alt="Batonne cart UI version 1 image"></div>
+          <div class="cart-v1 intermed"><a href="#modal-cart-v1" rel="modal:open"><img src="../images/batonne/batonne-cart-v1.png" alt="Batonne cart UI version 1 image"></a></div>
           <p>We then refined our payment flow so that the user can pay for all items in their cart at once. In terms of the navigation ~ pick-up flow, we showed the user a list of food items to be picked up, and a multi-destination route that the user can follow to pick up food from restaurants in different locations. However, this actually confused the user, because there was too much information shown in one screen.</p>
-          <div class="cart-v2 intermed"><img src="../images/batonne/batonne-cart-v2.png" alt="Batonne cart UI version 2 image"></div>
+          <div class="cart-v2 intermed"><a href="#modal-cart-v2" rel="modal:open"><img src="../images/batonne/batonne-cart-v2.png" alt="Batonne cart UI version 2 image"></a></div>
           <p>Given this, we separated out the list of food items grouped by restaurants and the route to the restaurants to avoid information overload. We made sure to sort the restaurants by distance from current location, so that the users would easily know which restaurant they were supposed to go first. (In hindsight, I think we could have minimized the number of iterations by thinking through the payment ~ navigation ~ pick-up flow more in detail, possibly through a to-be user journey.)</p>
-          <div class="cart-v3 intermed"><img src="../images/batonne/batonne-cart-v3.png" alt="Batonne cart UI version 3 image"></div>
+          <div class="cart-v3 intermed"><a href="#modal-cart-v3" rel="modal:open"><img src="../images/batonne/batonne-cart-v3.png" alt="Batonne cart UI version 3 image"></a></div>
         </section>
-        <div class="btn-fill"><a href="https://www.figma.com/proto/6YDXjaBaDpuixkbZNqZ4xy/TDP_food-share?node-id=304%3A3653&scaling=scale-down&page-id=122%3A874&starting-point-node-id=304%3A3653" target="_blank">See the final prototype</a></div>
+        <div class="btn-fill batonne-green-bg batonne-green-border"><a href="https://www.figma.com/proto/6YDXjaBaDpuixkbZNqZ4xy/TDP_food-share?node-id=304%3A3653&scaling=scale-down&page-id=122%3A874&starting-point-node-id=304%3A3653" target="_blank">See the final prototype<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
       </article>
       <article class="reflection">
         <h2 class="work-h2 batonne-green">Reflection</h2>
@@ -188,20 +201,24 @@
       </article>
     </main>
     <aside class="other-pj">
-      <h2 class="work-h2 batonne-green">Other Projects</h2>
-      <div class="work-container work-tms">
-        <a href="https://takaomura.com/tms">
-          <div class="work-thumbnail"><img src="../images/tms/tms-thumbnail.jpg" alt="TMSサムネイル"></div>
-          <h2 class="work-h2 batonne-green">Donation Page Redesign</h2>
-          <p>Responsive website</p>
-        </a>
-      </div>
-      <div class="work-container work-suisui">
-        <a href="https://takaomura.com/suisui">
-          <div class="work-thumbnail"><img src="../images/suisui/suisui-thumbnail.jpg" alt="suisuiサムネイル"></div>
-          <h2 class="work-h2 batonne-green">Water Tracking App Design</h2>
-          <p>Mobile app</p>
-        </a>
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 batonne-green">Other Projects</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms">
+            <a href="https://takaomura.com/tms">
+              <div class="work-thumbnail"><img src="../images/tms/tms-thumbnail.jpg" alt="TMSサムネイル"></div>
+              <h3>Donation Page Redesign</h3>
+              <p>Responsive website</p>
+            </a>
+          </div>
+          <div class="work-container work-suisui">
+            <a href="https://takaomura.com/suisui">
+              <div class="work-thumbnail"><img src="../images/suisui/suisui-thumbnail.jpg" alt="suisuiサムネイル"></div>
+              <h3>Water Tracking App Design</h3>
+              <p>Mobile app</p>
+            </a>
+          </div>
+        </div>
       </div>
     </aside>
     <footer>
@@ -212,6 +229,18 @@
       <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
     </footer>
   </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-persona" class="modal"><img src="../images/batonne/batonne-persona.png" alt="Batonne persona image"></div>
+  <div id="modal-journey" class="modal"><img src="../images/batonne/batonne-journey.png" alt="Batonne journey image"></div>
+  <div id="modal-object" class="modal"><img src="../images/batonne/batonne-object.svg" alt="Batonne object image"></div>
+  <div id="modal-object-rel" class="modal"><img src="../images/batonne/batonne-object-rel.svg" alt="Batonne object relationship image"></div>
+  <div id="modal-visual-sys" class="modal"><img src="../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></div>
+  <div id="modal-wireframe" class="modal"><img src="../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></div>
+  <div id="modal-hifi" class="modal"><img src="../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></div>
+  <div id="modal-cart-v1" class="modal"><img src="../images/batonne/batonne-cart-v1.png" alt="Batonne payment~pickup UI version 1 image"></div>
+  <div id="modal-cart-v2" class="modal"><img src="../images/batonne/batonne-cart-v2.png" alt="Batonne payment~pickup UI version 2 image"></div>
+  <div id="modal-cart-v3" class="modal"><img src="../images/batonne/batonne-cart-v3.png" alt="Batonne payment~pickup UI version 3 image"></div>
   
 </body>
 </html>
