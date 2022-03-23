@@ -42,14 +42,14 @@ SP
 Font
 ------------------------------ */
 h1 {
-  font: 700 18px/1.5 "Lato", "sans-serif";
+  font: 700 24px/1.5 "Lato", "sans-serif";
   text-align: left; }
 
 .h1-lg {
   font: 700 24px/1.5 "Lato", "sans-serif"; }
 
 h2 {
-  font: 700 18px/1.5 "Lato", "sans-serif";
+  font: 700 20px/1.5 "Lato", "sans-serif";
   text-align: left; }
 
 .font-blue {
@@ -345,14 +345,124 @@ SP
 /* ------------------------------
 Font
 ------------------------------ */
+.work-h2 {
+  margin-bottom: 20px;
+  position: relative; }
+
+.work-h2:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 110%;
+  left: 0; }
+
+h3 {
+  font: 700 18px/1.5 "Lato", "sans-serif";
+  margin-bottom: 5px; }
+
+/* ------------------------------
+Color
+------------------------------ */
+.batonne-green {
+  color: #207972; }
+
+.batonne-green:after {
+  background: #207972; }
+
 /* ------------------------------
 Main visual
 ------------------------------ */
 .batonne-top-main {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 300px; }
+  .batonne-top-main h1 {
+    padding-top: 120px;
+    margin-bottom: 10px; }
+  .batonne-top-main p {
+    margin-left: 5%; }
+  .batonne-top-main .batonne-main-img {
+    position: absolute;
+    top: -50px;
+    right: -120px; }
 
-.batonne-main-img {
+/* ------------------------------
+Main 
+------------------------------ */
+.work-main {
+  margin: 0 auto;
+  width: 90%; }
+  .work-main article {
+    margin-bottom: 40px; }
+  .work-main section {
+    margin-bottom: 20px; }
+  .work-main .process-desc,
+  .work-main .understand-define,
+  .work-main .design-evaluate {
+    margin-bottom: 40px; }
+  .work-main p {
+    margin-bottom: 20px; }
+  .work-main ol {
+    list-style: decimal inside;
+    text-indent: -5%;
+    margin-left: 5%; }
+    .work-main ol li {
+      margin-bottom: 10px; }
+      .work-main ol li .list-item {
+        position: relative;
+        left: 5px; }
+
+/* ------------------------------
+Process 
+------------------------------ */
+.funnel-img {
+  width: 50%;
+  margin: 0 auto 20px; }
+
+.intermed {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative; }
+  .intermed img {
+    padding: 2.5%; }
+
+.intermed:after {
+  font: 12px/1.5 "Lato", "sans-serif";
+  font-style: italic;
+  color: #707070;
   position: absolute;
-  top: -180px;
-  right: -360px; }
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%); }
+
+.persona:after {
+  content: "User Persona"; }
+
+.journey:after {
+  content: "User Journey"; }
+
+.object:after {
+  content: "Object Definition"; }
+
+.object-rel:after {
+  content: "Object Relationship Map"; }
+
+.visual-system:after {
+  content: "Visual System"; }
+
+.wireframe:after {
+  content: "Wireframe"; }
+
+.hifi:after {
+  content: "Hi-fi Prototype"; }
+
+.cart-v1:after {
+  content: "Payment ~ Pick-up UI Version 1"; }
+
+.cart-v2:after {
+  content: "Payment ~ Pick-up UI Version 2"; }
+
+.cart-v3:after {
+  content: "Payment ~ Pick-up UI Version 3"; }
