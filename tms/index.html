@@ -28,7 +28,7 @@
   <!-- Smooth scrolling --> 
   <script>
       $(function(){
-       $('a[href^="#"][href!="#modal-journey-tms"][href!="#modal-sitemap"][href!="#modal-visual-sys-tms"]').click(function() {
+       $('a[href^="#"][href!="#modal-journey-tms"][href!="#modal-sitemap"][href!="#modal-visual-sys-tms"][href!="#modal-tms-before][href!="#modal-tms-after"]').click(function() {
           var href= $(this).attr("href");
           var target = $(href == "#" || href == "" ? 'html' : href);
           var position = target.offset().top;       
@@ -162,6 +162,10 @@
           <p>Hence, we intentionally chose light & warm colors to express “warmth” (yellow ~ orange for main colors), while also taking into account the homepage’s main color (orange). We kept the background white for a simple / minimal look. We also wanted to give the page a sleek and modern look to make sure users understand that TMS is a forward-looking organization. The resulting visual system is below:</p>
           <div class="visual-system intermed"><a href="#modal-visual-sys-tms" rel="modal:open"><img src="../images/tms/tms-visual-system.svg" alt="TMS visual system image"></a></div>
           <p>Based on the visual system and sitemap, I created the website design and implemented it using HTML/CSS/Javascript. (It would have been best to conduct user testing before I implemented the website, but that was not possible due to the deadline of the school project.)</p>
+          <div class="intermed-flex">
+            <div class="tms-before intermed"><a href="#modal-tms-before" rel="modal:open"><img src="../images/tms/tms-page-before.png" alt="TMS donation page before image"></a></div>
+            <div class="tms-after intermed"><a href="#modal-tms-after" rel="modal:open"><img src="../images/tms/tms-page-after.png" alt="TMS donation page before image"></a></div>
+          </div>
           <p>After implementing the website, I conducted a quantitative survey (n = 20) to test the hypothesis that through the donation page, potential donors will (1) empathize with the cause, (2) trust the organization, and (3) show an intention to donate. We found that:</p>
           <ul class="survey-list">
             <li><span class="text-lg">85%</span> of respondents empathized with the cause</li>
@@ -212,8 +216,10 @@
   
   <!-- Modal boxes  -->
   <div id="modal-journey-tms" class="modal"><img src="../images/tms/tms-journey.svg" alt="TMS journey image"></div>
-  <div id="modal-visual-sys-tms" class="modal"><img src="../images/tms/tms-visual-system.svg" alt="Batonne visual system image"></div>
-  <div id="modal-sitemap" class="modal"><img src="../images/tms/tms-sitemap.svg" alt="Batonne site map image"></div>
+  <div id="modal-visual-sys-tms" class="modal"><img src="../images/tms/tms-visual-system.svg" alt="TMS visual system image"></div>
+  <div id="modal-sitemap" class="modal"><img src="../images/tms/tms-sitemap.svg" alt="TMS site map image"></div>
+  <div id="modal-tms-before" class="modal"><img src="../images/tms/tms-page-before.png" alt="TMS donation page before image"></div>
+  <div id="modal-tms-after" class="modal"><img src="../images/tms/tms-page-after.png" alt="TMS donation page after image"></div>
   
   
   <!--　Button to go to the top of the page	-->

@@ -793,6 +793,12 @@ Process
 .sitemap:after {
   content: "Site Map"; }
 
+.tms-before:after {
+  content: "Donation page - Before"; }
+
+.tms-after:after {
+  content: "Donation page - After"; }
+
 /* ------------------------------
 button
 ------------------------------ */
@@ -821,7 +827,7 @@ TB
   Process
   ------------------------------ */
   .tms-process-img img {
-    width: 50%;
+    width: 80%;
     display: block;
     margin: 0 auto; }
 
@@ -840,6 +846,9 @@ TB
     margin: 0 auto 40px; }
   #tms-wrapper .visual-system {
     height: 160px; }
+  #tms-wrapper .tms-before,
+  #tms-wrapper .tms-after {
+    width: 40%; }
 
   #modal-journey-tms,
   #modal-sitemap,
