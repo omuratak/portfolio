@@ -1,6 +1,6 @@
 /* Consistent styling */
 body {
-  font: 16px/1.5 "Lato", "sans-serif";
+  font: 16px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
   background: #f5f5f5;
   color: #444; }
 
@@ -47,14 +47,14 @@ SP
 Font
 ------------------------------ */
 h1 {
-  font: 700 24px/1.5 "Lato", "sans-serif";
+  font: 700 24px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
   text-align: left; }
 
 .h1-lg {
-  font: 700 24px/1.5 "Lato", "sans-serif"; }
+  font: 700 24px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif"; }
 
 h2 {
-  font: 700 20px/1.5 "Lato", "sans-serif";
+  font: 700 20px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
   text-align: left; }
 
 .font-blue {
@@ -64,7 +64,7 @@ strong {
   font-weight: 700; }
 
 small {
-  font: 12px/1.5 "Lato", "sans-serif"; }
+  font: 12px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif"; }
 
 /* ------------------------------
 Header
@@ -205,10 +205,10 @@ TB
 ================================================================================================= */
 @media screen and (min-width: 600px) {
   h1 {
-    font: 500 36px/1.5 "Lato", "sans-serif"; }
+    font: 500 36px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif"; }
 
   .h1-lg {
-    font: 500 48px/1.5 "Lato", "sans-serif"; } }
+    font: 500 48px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif"; } }
 /* =================================================================================================
 PC
 ================================================================================================= */
@@ -218,12 +218,12 @@ PC
     margin: 0 auto; }
 
   h1 {
-    font: 500 48px/1.5 "Lato", "sans-serif";
+    font: 500 48px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
     margin-left: 0;
     text-align: left; }
 
   .h1-lg {
-    font: 500 64px/1.5 "Lato", "sans-serif"; }
+    font: 500 64px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif"; }
 
   /* ------------------------------
   Header
@@ -373,7 +373,7 @@ Font
   left: 0; }
 
 h3 {
-  font: 700 18px/1.5 "Lato", "sans-serif";
+  font: 700 18px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
   margin-bottom: 5px; }
 
 .highlight {
@@ -470,7 +470,7 @@ Process
     padding: 2.5%; }
 
 .intermed:after {
-  font: 12px/1.5 "Lato", "sans-serif";
+  font: 12px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
   font-style: italic;
   color: #707070;
   position: absolute;
@@ -695,10 +695,10 @@ PC
     margin: 0 auto; }
     .work-main h2,
     .other-pj-wrapper h2 {
-      font: 700 36px/1.5 "Lato", "sans-serif"; }
+      font: 700 36px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif"; }
     .work-main h3,
     .other-pj-wrapper h3 {
-      font: 700 24px/1.5 "Lato", "sans-serif";
+      font: 700 24px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
       margin-bottom: 10px; }
     .work-main .work-h2:after,
     .other-pj-wrapper .work-h2:after {
@@ -740,7 +740,7 @@ SP
 Font
 ------------------------------ */
 .text-lg {
-  font: 700 20px/1.5 "Lato", "sans-serif"; }
+  font: 700 20px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif"; }
 
 /* ------------------------------
 Color

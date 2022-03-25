@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | 大村崇寛</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+  <!-- slick	--> 
+  <script>
+    $(document).ready(function(){
+      $('.profile-slider').slick({
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        dots: false,
+        arrows: false,
+        fade: true
+      });
+    });
+  </script>
+  
+</head>
+  
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com">Work</a></li>
+          <li><a href="#"><strong><span class="font-blue">About</span></strong></a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch lang-switch-active">
+        <a href="https://takaomura.com/about">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <h1 class="h1-lg h1-about">大村 崇寛 | Takahiro Omura</h1>
+    <main class="about">
+      <aside>
+        <div class="profile-slider">
+          <div class="profile-img"><img src="../../images/about/profile-1-resize.jpg" alt="Takahiro Omura profile image"></div>
+          <div class="profile-img"><img src="../../images/about/profile-2-resize.jpg" alt="Takahiro Omura profile image"></div>
+          <div class="profile-img"><img src="../../images/about/profile-3-resize.jpg" alt="Takahiro Omura profile image"></div>
+        </div>
+      </aside>
+      <article>
+        <section>
+          <h2>自分について</h2>
+          <p>初めまして、大村崇寛（おおむらたかひろ）です！デザインを通して人々の生活を豊かにし、同時に社会的なインパクトを生むことに関心を持っています。現在は<a href="https://www.tokyo-designplex.com/" target="_blank">東京デザインプレックス研究所 <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>というデザインの専門学校でUI/UXデザイン・Webデザインを勉強しています。</p>
+          <p>以前（2017−2021年）は、新卒で入社した<a href="https://www.zs.com/jp/japan" target="_blank">ZSアソシエイツ <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>という経営コンサルティングファームで製薬企業の営業・マーケティングのアナリティクスやテクノロジー関連の業務に従事していました。また、プロボノコンサルティングチームを立ち上げてNPOを支援する活動も行っていました。</p>
+          <p>アメリカ・アイオワ州にある小さなリベラルアーツ・カレッジである<a href="https://www.grinnell.edu/" target="_blank">グリネル大学 <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>を2017年に卒業しました。大学では心理学を専攻し、行動神経科学の研究に取り組んでいました。</p>
+          <div class="btn-outline"><a href="./takahiro-omura-resume-202203-jp.pdf" target="_blank">履歴書<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </section>
+        <section>
+          <h2>仕事以外の自分</h2>
+          <p>サッカー観戦が好きで、アーセナルFCを応援しています。試合は全てヨーロッパで行われるので、よく朝の3時に（気合で）起きて試合観戦をしています。</p>
+          <p>サッカー以外では、写真撮影が好きです。最近2kg以上する巨大なフィルムカメラを購入して、旅行に持っていったりしています（流石に重い...）。</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+</body>
+</html>

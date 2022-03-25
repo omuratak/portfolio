@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>フードシェアアプリデザイン | 大村崇寛</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"][href!="#modal-persona"][href!="#modal-journey"][href!="#modal-object"][href!="#modal-object-rel"][href!="#modal-visual-sys"][href!="#modal-wireframe"][href!="#modal-hifi"][href!="#modal-cart-v1"][href!="#modal-cart-v2"][href!="#modal-cart-v3"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+</head>
+  
+<body>  
+  <div id="batonne-wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com/jp">Work</a></li>
+          <li><a href="https://takaomura.com/jp/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch lang-switch-active">
+        <a href="https://takaomura.com/batonne">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <div class="batonne-top-main">
+      <h1>フードシェアアプリ<br>デザイン</h1>
+      <p>UI/UXデザイン, UXリサーチ</p>
+      <img class="batonne-main-img" src="../../images/batonne/batonne-top-main.png" alt="トップイメージ">
+    </div>
+    <main class="work-main">
+      <article class="summary">
+        <h2 class="work-h2 batonne-green">プロジェクトの概要</h2>
+        <section>
+          <h3>背景</h3>
+          <p>食品ロスは経済的損失だけでなく、環境に対して悪影響を及ぼす重要な社会課題です。日本では、出荷された食品のうち、<strong class="highlight batonne-green-underline">約8%が食べられるにも関わらず、捨てられています</strong>。(<a href="https://www.maff.go.jp/j/press/shokusan/kankyoi/attach/pdf/190412_40-1.pdf" target="_blank">農林水産省, 2016 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>).</p>
+        </section>
+        <section>
+          <h3>課題</h3>
+          <p>どのようにして食品ロスを減らすことができるだろうか？</p>
+        </section>
+        <section>
+          <h3>解決策</h3>
+          <p>まだ食べられるのに、捨てられてしまいそうな食べものをお店から安く買って持ち帰ることができる<strong class="highlight batonne-green-underline">フードシェアアプリ</strong>をデザインしました。</p>
+        </section>
+      </article>
+      <article class="context">
+        <h2 class="work-h2 batonne-green">プロジェクトの前提</h2>
+        <p>このプロジェクトは、学校のグループ課題の一環で、モバイルアプリのプロトタイプを作成するというもので、テーマを自由に決めることができました。</p>
+        <p>プロジェクトは3人体制で、私はグループの議論のファシリテーション、ワイヤーフレームの作成、いくつかの機能のプロトタイプの作成、そしてユーザビリティテストを担当しました。</p>
+      </article>
+      <article class="process">
+        <h2 class="work-h2 batonne-green">プロジェクトのプロセス</h2>
+        <section class="process-desc">
+          <div class="funnel-flex">
+            <div class="funnel-text">
+              <p>グループワークを始めてすぐに、私たちのチームはアイディアの発想に取り掛かりました。解決したい課題を持ち寄って議論した結果、「食品ロス」をテーマにすることを決め、<strong class="highlight batonne-green-underline">「レストランやスーパーが、まだ食べられるのに捨てられてしまいそうな食品を安くユーザーに売ることができるプラットフォーム」を通して食品ロスを削減できる、という仮説を立てました。</strong></p>
+              <p>まずは、「食品ロス」の問題への理解を深めるべく、デスクリサーチをしてみました。結果、出荷された食品のうち、33%が廃棄されており、さらにそのうちの22%はまだ食べられる「食品ロス」である（つまり、出荷された食品の約8%が食べられるのに捨てられている）と分かり、やはり食品ロスは大きな問題だと再確認できました。</p>
+            </div>
+            <div class="funnel-img"><img src="../../images/batonne/batonne-funnel-jp.svg" alt="funnel image"></div>
+          </div>
+          <p>そこからは、人間中心設計のアプローチを取りました。まず、ユーザーへのインタビューを通して「食」に関するニーズを理解し、ユーザーの要求をアプリの要件に落とし込み、解決策を設計と評価を繰り返して最終的なプロトタイプまで煮詰めました。</p>
+          <div class="hcd-process-img"><img src="../../images/hcd-process-jp.svg" alt="HCD process image"></div>
+        </section>
+        <section class="understand-define">
+          <h3>1. 要求の理解・要件の定義</h3>
+          <p>アプリに必要な機能要件を洗い出すために、まずは「食」についての現状でのユーザーの経験を理解することから始めました。ユーザーインタビューを2件ほど実施し、それをベースにユーザーペルソナとユーザージャーニーを作成しました。（振り返ると、既にあったコンセプト案をより直接的にテストする方が良かったかもしれないと反省...）</p>
+          <div class="intermed-flex">
+            <div class="persona intermed"><a href="#modal-persona" rel="modal:open"><img src="../../images/batonne/batonne-persona-jp.png" alt="Batonne persona image"></a></div>
+            <div class="journey intermed"><a href="#modal-journey" rel="modal:open"><img src="../../images/batonne/batonne-journey-jp.png" alt="Batonne journey image"></a></div>
+          </div>
+          <p>ユーザーモデリングを通してユーザーの現状を明確にした結果、<strong class="highlight batonne-green-underline">3つのインサイト</strong>を得られました:</p>
+          <ol>
+            <li><span class="list-item">東京23区内の中心部にはスーパーが少なく、都心部に住むユーザーは自炊をしたくてもそもそもスーパーを見つけるのに苦労しているため、近場のレストランから食材を調達できれば嬉しい</span></li>
+            <li><span class="list-item">多くの場合、ユーザーは自炊するかどうかを決めてから次の行動に移る（買い物に行く、など）が、より柔軟に自炊とその他のオプションを行き来したいと考えている（例：「自炊しようと思って買い物に来たけど、やっぱりお弁当が良い」）</span></li>
+            <li><span class="list-item">外食やデリバリーは自炊よりもコストがかかる。コンビニ食以外の安価なオプションがほしい</span></li>
+          </ol>
+          <p>これらのインサイトをもとに、以下のように機能要件をまとめました：</p>
+          <ol>
+            <li><span class="list-item">食品（食材および料理）を閲覧・検索する機能</span></li>
+            <li><span class="list-item">よく利用する店舗を「お気に入り」に保存できる機能</span></li>
+            <li><span class="list-item">食品を購入する決済機能</span></li>
+            <li><span class="list-item">店舗まで行って食品を受け取るためのナビゲーション・受け渡しの機能</span></li>
+          </ol>
+        </section>
+        <section class="design-evaluate">
+          <h3>2. 解決策の設計・評価</h3>
+          <p>機能要件をもとに、今度は<strong class="highlight batonne-green-underline">オブジェクト指向で情報設計</strong>を行いました。まずオブジェクトを作成し、そのプロパティや取れるアクションを定義し、オブジェクト間の関係性、およびビュー（一覧 vs 詳細画面）を整理しました。</p>
+          <div class="intermed-flex">
+            <div class="object intermed"><a href="#modal-object" rel="modal:open"><img src="../../images/batonne/batonne-object-jp.svg" alt="Batonne object image"></a></div>
+            <div class="object-rel intermed"><a href="#modal-object-rel" rel="modal:open"><img src="../../images/batonne/batonne-object-rel-jp.svg" alt="Batonne object relationship image"></a></div>
+          </div>
+          <p>情報設計をベースにして、次に<strong class="highlight batonne-green-underline">ワイヤーフレーム</strong>を作成しました。そのワイヤーフレームを、3件のユーザビリティテストを実施し、ユーザーフローなどに大きな問題がないことを確認しました。また、ワイヤーフレームの作成と同時並行でビジュアルシステムやコンポーネントの設計を進めました。そして、ワイヤーフレームとビジュアルシステムを掛け合わせて、<strong class="highlight batonne-green-underline">ハイファイのプロトタイプ</strong>を作成しました。</p>
+          <div class="intermed-flex">
+            <div class="visual-system intermed"><a href="#modal-visual-sys" rel="modal:open"><img src="../../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></a></div>
+            <div class="wireframe intermed"><a href="#modal-wireframe" rel="modal:open"><img src="../../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></a></div>
+            <div class="hifi intermed"><a href="#modal-hifi" rel="modal:open"><img src="../../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></a></div>
+          </div>
+          <p>プロトタイプを使って<strong class="highlight batonne-green-underline">ユーザビリティテスト</strong>を3ラウンドを実施し、ユーザビリティ上の問題をその度に潰していきました。エッジケース（複数の店舗から食材を購入する）における会計〜店舗へのナビゲーション〜受け渡しのUIの検討に最も苦労しました。 </p>
+          <p>最初は、店舗ごとに決済・ナビゲーション・受け取りをするようにUIを設計していました。しかし、それだと複数の店舗から食品を購入する場合に会計の操作を複数回行わなければいけず、非常に手間がかかることが分かりました。</p>
+          <div class="cart-v1 intermed"><a href="#modal-cart-v1" rel="modal:open"><img src="../../images/batonne/batonne-cart-v1.png" alt="Batonne cart UI version 1 image"></a></div>
+          <p>そこで、カートに入れた食品を一度にまとめて決済できるように決済フローを改善しました。ナビゲーション〜受け取りに関しては、受け取る必要のある食品をリストでまとめて表示し、また複数店舗へのルートを一本道で表示させました。しかし、それだと情報過多気味になってしまい、逆にユーザーを混乱させてしまいました。</p>
+          <div class="cart-v2 intermed"><a href="#modal-cart-v2" rel="modal:open"><img src="../../images/batonne/batonne-cart-v2.png" alt="Batonne cart UI version 2 image"></a></div>
+          <p>これを受けて、「受け取る食品のリスト」と「それぞれの店舗へのルート」を分けて情報を分散しました。また、表示する店舗を現在地からの距離ベースで近い順に並び替えることで、どの店舗に最初に行くべきかを明確にしました。（振り返ると、to-beのユーザージャーニーをしっかりと描いて決済〜ナビゲーション〜受け取りのユーザーフローをより明確にしておくことで、デザインの修正工程をへらすことができたかもしれないと反省...）</p>
+          <div class="cart-v3 intermed"><a href="#modal-cart-v3" rel="modal:open"><img src="../../images/batonne/batonne-cart-v3.png" alt="Batonne cart UI version 3 image"></a></div>
+        </section>
+        <div class="btn-fill batonne-green-bg batonne-green-border"><a href="https://www.figma.com/proto/6YDXjaBaDpuixkbZNqZ4xy/TDP_food-share?node-id=304%3A3653&scaling=scale-down&page-id=122%3A874&starting-point-node-id=304%3A3653" target="_blank">プロトタイプを見る<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="reflection">
+        <h2 class="work-h2 batonne-green">次に向けての学び</h2>
+        <p>今回は、食品を買うユーザーに焦点を当ててプロジェクトに取り組みましたが、このようなプラットフォームを実際に実現するには、おそらくプラットフォームに賛同・参加してくれる店舗の数がかなり重要なKSF（重要成功要因）だと考えられるため、店舗側としっかり連携し、店舗にとって「良い経験」をデザインすることが大事だと言えそうです。</p>
+        <p>このプロジェクトからは、ユーザーにデザインを持っていって、繰り返し評価してもらうことの重要性を学びました。実際、プロジェクトの様々なタイミング（インタビュー、ワイヤーフレーム、プロトタイプ）でユーザーをしっかり巻き込んだことで、プロジェクト終盤でのデザイン修正を最小に抑えることができたと考えています。</p>
+        <p>また、誰も疎外せずにユーザーに社会貢献意識を持ってもらうことの難しさを実感しました。このアプリを通して、「環境にとって良い影響を与えている実感」を醸成したいと考えていましたが、「環境保護」を前面に押し出しすぎて鬱陶しがられるのも避けたいと考え、最終的には「食品ロス削減」という社会的意義についてのメッセージは最小限に抑えました。今後、そのさじ加減を探求して、最適なバランスを。見つけていきたいです。</p>
+      </article>
+    </main>
+    <aside class="other-pj">
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 batonne-green">Other Projects</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms other-work-container">
+            <a href="https://takaomura.com/jp/tms">
+              <div class="work-thumbnail"><img src="../../images/tms/tms-thumbnail.jpg" alt="TMSサムネイル"></div>
+              <h3>寄付ページのリ・デザイン</h3>
+              <p>レスポンシブWebサイト</p>
+            </a>
+          </div>
+          <div class="work-container work-suisui other-work-container">
+            <a href="https://takaomura.com/jp/suisui">
+              <div class="work-thumbnail"><img src="../../images/suisui/suisui-thumbnail.jpg" alt="suisuiサムネイル"></div>
+              <h3>給水アプリのデザイン</h3>
+              <p>モバイルアプリ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-persona" class="modal"><img src="../../images/batonne/batonne-persona.png" alt="Batonne persona image"></div>
+  <div id="modal-journey" class="modal"><img src="../../images/batonne/batonne-journey.png" alt="Batonne journey image"></div>
+  <div id="modal-object" class="modal"><img src="../../images/batonne/batonne-object.svg" alt="Batonne object image"></div>
+  <div id="modal-object-rel" class="modal"><img src="../../images/batonne/batonne-object-rel.svg" alt="Batonne object relationship image"></div>
+  <div id="modal-visual-sys" class="modal"><img src="../../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></div>
+  <div id="modal-wireframe" class="modal"><img src="../../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></div>
+  <div id="modal-hifi" class="modal"><img src="../../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></div>
+  <div id="modal-cart-v1" class="modal"><img src="../../images/batonne/batonne-cart-v1.png" alt="Batonne payment~pickup UI version 1 image"></div>
+  <div id="modal-cart-v2" class="modal"><img src="../../images/batonne/batonne-cart-v2.png" alt="Batonne payment~pickup UI version 2 image"></div>
+  <div id="modal-cart-v3" class="modal"><img src="../../images/batonne/batonne-cart-v3.png" alt="Batonne payment~pickup UI version 3 image"></div>
+  
+  <!--　Button to go to the top of the page	-->
+	<div class="page-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+  
+</body>
+</html>

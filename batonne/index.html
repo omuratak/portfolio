@@ -51,22 +51,6 @@
            });
       });
     </script> 
-
-  <!-- Fade-in by scrolling	--> 
-  <script>
-      $(document).ready(function ($){
-         $(window).scroll(function () {
-           $('.fade-in').each(function () {
-             var scroll = $(window).scrollTop();
-             var offset = $(this).offset().top;
-             var windowHeight = $(window).height();
-             if (scroll > offset - windowHeight + 50) {
-               $(this).addClass("scroll-in");
-             }
-           });
-         });
-      });
-    </script>
   
   <!-- Toggle language switch button when clicked  -->
   <script>
@@ -76,21 +60,6 @@
       });
     });
     </script>
-  
-  <!-- slick	--> 
-  <script>
-    $(document).ready(function(){
-      $('.profile-slider').slick({
-        slidesToShow: 1, 
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        dots: false,
-        arrows: false,
-        fade: true
-      });
-    });
-  </script>
   
 </head>
   
@@ -104,7 +73,7 @@
         </ul>
       </nav>
       <div class="lang-switch">
-        <a href="#">
+        <a href="https://takaomura.com/jp/batonne">
           <span class="lang-en"></span>
           <span class="lang-jp"></span>
         </a>
@@ -120,7 +89,7 @@
         <h2 class="work-h2 batonne-green">Project Summary</h2>
         <section>
           <h3>Background</h3>
-          <p>Food waste is a major social issue, which causes both (1) economic loss and (2) negative impact on the environment. In Japan, approximately <strong class="highlight batonne-green-underline">8% of edible food are being disposed</strong> (2016).</p>
+          <p>Food waste is a major social issue, which causes both (1) economic loss and (2) negative impact on the environment. In Japan, approximately <strong class="highlight batonne-green-underline">8% of edible food are being disposed</strong> (<a href="https://www.maff.go.jp/j/press/shokusan/kankyoi/attach/pdf/190412_40-1.pdf" target="_blank">Ministry of Agriculture, Forestry and Fisheries, 2016 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>).</p>
         </section>
         <section>
           <h3>Question</h3>
@@ -134,50 +103,50 @@
       <article class="context">
         <h2 class="work-h2 batonne-green">Context</h2>
         <p>This project was part of a school group project, where we were assigned teams to work on a mobile app of choice, and create a working prototype; we were free to work on any kind of app. </p>
-        <p>We worked in a team of 3. As part of the team, I facilitated team discussions/ideations, created wireframes & hi-fi prototypes for some of the features, and conducted user testing.</p>
+        <p>We worked in a team of 3. As part of the team, I facilitated team discussions/ideations, created wireframes & hi-fi prototype screens for some of the features, and conducted user testing.</p>
       </article>
       <article class="process">
         <h2 class="work-h2 batonne-green">Process</h2>
         <section class="process-desc">
           <div class="funnel-flex">
             <div class="funnel-text">
-              <p>Given the assignment, we started off ideating. We gathered issues we wanted to solve, and eventually landed on “food waste”. We hypothesized that <strong class="highlight batonne-green-underline">“creating a platform where restaurants can share their food cheaply before disposing them to interested users can help reduce food waste”.</strong></p>
-              <p>We first did a quick desk research to understand the “food waste” issue better. We found that indeed, food waste is a big issue: 33% of food shipped are being disposed, and out of that, 23% are still edible (= 8% of food shipped are being thrown away even though it is still edible). We became confident that addressing “food lost” can have a large impact on this issue.</p>
+              <p>Given the assignment, we started off ideating. We gathered issues we wanted to solve, and eventually landed on “food waste”. We hypothesized that <strong class="highlight batonne-green-underline">“creating a platform, where restaurants can share their food cheaply before disposing them to interested users, can help reduce food waste”.</strong></p>
+              <p>We first did some quick desk research to understand the “food waste” issue better. We found that indeed, food waste is a big issue: 33% of food shipped are being disposed, and out of that, 23% are still edible (= 8% of food shipped are being thrown away even though it is still edible). We became confident that addressing “food loss” can have a large impact on this issue.</p>
             </div>
             <div class="funnel-img"><img src="../images/batonne/batonne-funnel.svg" alt="funnel image"></div>
           </div>
-          <p>From there, we followed the human centered design approach, while also keeping in mind the 5 elements of user experience. </p>
+          <p>From there, we followed the human centered design approach. First, we intereviewed users to understand their experiences and needs around eating. After that, we defined the features that solved their needs. Then, we designed solutions and evaluated them through an iterative approach.</p>
           <div class="hcd-process-img"><img src="../images/hcd-process.svg" alt="HCD process image"></div>
         </section>
         <section class="understand-define">
           <h3>1. Understand and Define</h3>
-          <p>We first wanted to understand the current experience around eating, in order to highlight their needs that our app can potentially fulfill. We conducted quick user interviews (n = 2) and derived a user persona as well as a user journey. (In hindsight, I think we should have directly tested our concept against these users to see if our hypothesis was on the right track.)</p>
+          <p>We first wanted to understand the current experience around eating, in order to highlight their needs that our app can potentially fulfill. We conducted quick user interviews (n = 2) and derived a user persona as well as a user journey. (In hindsight, I think we should have directly tested our concept against these users to see if our concept was on the right track.)</p>
           <div class="intermed-flex">
             <div class="persona intermed"><a href="#modal-persona" rel="modal:open"><img src="../images/batonne/batonne-persona.png" alt="Batonne persona image"></a></div>
             <div class="journey intermed"><a href="#modal-journey" rel="modal:open"><img src="../images/batonne/batonne-journey.png" alt="Batonne journey image"></a></div>
           </div>
-          <p>After we clarified the users’ current experience through user modeling,  we derived <strong class="highlight batonne-green-underline">three key insights</strong>:</p>
+          <p>After we clarified the users’ current experience through user modeling, we derived <strong class="highlight batonne-green-underline">three key insights</strong>:</p>
           <ol>
             <li><span class="list-item">Users in central Tokyo face a lack of options when looking to buy groceries even if they want to cook, and would like to be able to buy groceries from nearby restaurants</span></li>
-            <li><span class="list-item">Users usually decide whether to cook or not first before proceeding, but actually would like to switch between the two options more flexibly</span></li>
-            <li><span class="list-item">Eating out / ordering delivery is costly and not financially sustainable, and would like to have cheaper options other than convenience store food</span></li>
+            <li><span class="list-item">Users usually decide whether to cook or not first before proceeding, but actually would like to be able to switch between the two options more flexibly</span></li>
+            <li><span class="list-item">Eating out / ordering delivery is costly and not financially sustainable, and users would like to have cheaper options other than convenience store food</span></li>
           </ol>
           <p>These insights supported our hypothesis, and also informed us of key features that the app should have.<br>We came up with the following features:</p>
           <ol>
             <li><span class="list-item">Look for food (both cooked and raw) through browsing and searching features</span></li>
-            <li><span class="list-item">Mark and save restaurants through a favorite feature</span></li>
+            <li><span class="list-item">Mark and save restaurants through a "favorite" feature</span></li>
             <li><span class="list-item">Purchase food through a payment feature</span></li>
             <li><span class="list-item">Go to the restaurant to pick up food through navigation and hand-off features</span></li>
           </ol>
         </section>
         <section class="design-evaluate">
           <h3>2. Design and Evaluate</h3>
-          <p>Given the features we decided on, we defined the <strong class="highlight batonne-green-underline">information architecture</strong>. We first created objects, their properties, and actions. After that, we organized the relationships between the objects and their views (collection vs. single).</p>
+          <p>Given the features we decided on, we defined the <strong class="highlight batonne-green-underline">information architecture in an object-oriented manner</strong>. We first created objects, their properties, and actions. After that, we organized the relationships between the objects and their views (collection vs. single).</p>
           <div class="intermed-flex">
             <div class="object intermed"><a href="#modal-object" rel="modal:open"><img src="../images/batonne/batonne-object.svg" alt="Batonne object image"></a></div>
             <div class="object-rel intermed"><a href="#modal-object-rel" rel="modal:open"><img src="../images/batonne/batonne-object-rel.svg" alt="Batonne object relationship image"></a></div>
           </div>
-          <p>Based on the information architecture, we put together a <strong class="highlight batonne-green-underline">wireframe</strong>, and put it through a round of user testing (n = 3) to understand if there were any usability issues. While putting together the wireframe, we also defined the visual system. Putting together the wireframe and visual system, we put together a <strong class="highlight batonne-green-underline">hi-fi prototype</strong>.</p>
+          <p>Based on the information architecture, we put together a <strong class="highlight batonne-green-underline">wireframe</strong>, and put it through a round of user testing (n = 3) to understand if there were any usability issues. While putting together the wireframe, we also defined the visual system. Finally, combining the wireframe and visual system, we put together a <strong class="highlight batonne-green-underline">hi-fi prototype</strong>.</p>
           <div class="intermed-flex">
             <div class="visual-system intermed"><a href="#modal-visual-sys" rel="modal:open"><img src="../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></a></div>
             <div class="wireframe intermed"><a href="#modal-wireframe" rel="modal:open"><img src="../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></a></div>

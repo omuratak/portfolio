@@ -52,22 +52,6 @@
       });
     </script> 
 
-  <!-- Fade-in by scrolling	--> 
-  <script>
-      $(document).ready(function ($){
-         $(window).scroll(function () {
-           $('.fade-in').each(function () {
-             var scroll = $(window).scrollTop();
-             var offset = $(this).offset().top;
-             var windowHeight = $(window).height();
-             if (scroll > offset - windowHeight + 50) {
-               $(this).addClass("scroll-in");
-             }
-           });
-         });
-      });
-    </script>
-  
   <!-- Toggle language switch button when clicked  -->
   <script>
     $(function(){
@@ -76,21 +60,6 @@
       });
     });
     </script>
-  
-  <!-- slick	--> 
-  <script>
-    $(document).ready(function(){
-      $('.profile-slider').slick({
-        slidesToShow: 1, 
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        dots: false,
-        arrows: false,
-        fade: true
-      });
-    });
-  </script>
   
 </head>
   
@@ -104,7 +73,7 @@
         </ul>
       </nav>
       <div class="lang-switch">
-        <a href="#">
+        <a href="https://takaomura.com/jp/tms">
           <span class="lang-en"></span>
           <span class="lang-jp"></span>
         </a>
@@ -145,7 +114,7 @@
           <h3>1. Understand and Define</h3>
           <p>Our team recruited and interviewed 13 subjects (20s-50s, with or without previous donation experience) to understand the drivers and barriers to donating to a cause. From the subjects who did not have previous experience donating, <strong class="highlight tms-orange-underline">we found 3 key barriers to donation: (1) lack of trust towards the organization, (2) lack of transparency, and (3) cumbersome payment process</strong>.</p>
           <div class="tms-insight-img"><img src="../images/tms/tms-insight.svg" alt="TMS insight image"></div>
-          <p>Based on these barriers, as well as information from subjects with previous donation experience, we created a donor journey map to understand where and how the donation page can play a role in the entire donor journey. For this project, we focused on the consideration stage of the journey. </p>
+          <p>Based on these barriers, as well as information from subjects with previous donation experience, we created a donor journey map to understand where and how the donation page can play a role in the entire donor journey. For this project, we focused on the "consideration" stage of the journey. </p>
           <div class="journey intermed"><a href="#modal-journey-tms" rel="modal:open"><img src="../images/tms/tms-journey.svg" alt="TMS journey image"></a></div>
           <p>We concluded that for the donation page to encourage potential donors to donate, we need to craft a story about TMS that builds:</p>
           <ol>
@@ -172,14 +141,14 @@
             <li><span class="text-lg">65%</span> of respondents trusted the organization</li>
             <li><span class="text-lg">45%</span> of respondents were likely to donate</li>
           </ul>
-          <p><strong class="highlight tms-orange-underline">The results did support my hypothesis, but they need to be taken with a grain of salt</strong>, due to (1) low sample size, and (2) bias that all of the respondents are my friends/acquaintances who may have responded favorably. (I made the survey anonymous to try to alleviate the bias.)</p>
+          <p><strong class="highlight tms-orange-underline">Given that almost no one knew TMS beforehand, I believe the results support my hypothesis, but they need to be taken with a grain of salt</strong>, due to (1) low sample size, and (2) bias that all of the respondents are my friends/acquaintances who may have responded favorably. (I made the survey anonymous to try to alleviate the bias.)</p>
           <p>Additionally, in order to truly test its effectiveness, we would need to put this out into the real world and look into the conversion rates, etc.</p>
         </section>
         <div class="btn-fill tms-orange-bg tms-orange-border"><a href="http://tokyo-d-plex.com/~2110oomura/donate" target="_blank">See the donation page<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
       </article>
       <article class="reflection">
         <h2 class="work-h2 tms-orange">Reflection</h2>
-        <p><strong class="highlight tms-orange-underline">The website itself is only one part of the whole donor journey.</strong> Effectively reaching potential donors through various marketing efforts, as well as nurturing the relationship after users become donors through continuous communication are just as important, and will need to be addressed.</p>
+        <p><strong class="highlight tms-orange-underline">The website itself is only one part of the whole donor journey.</strong> Effectively reaching potential donors through various marketing efforts, as well as nurturing the relationship after users become donors through continuous communication are just as important.</p>
         <p>From this project, I worked directly with the organization, and  learned to communicate about design with a non-design audience.</p>
         <p>I am currently working with the organization to integrate this page into their organization website.</p>
       </article>

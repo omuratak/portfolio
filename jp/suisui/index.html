@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>給水アプリのデザイン | 大村崇寛</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"][href!="#modal-lofi"][href!="#modal-visual-sys-suisui"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+</head>
+  
+<body>  
+  <div id="suisui-wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com/jp">Work</a></li>
+          <li><a href="https://takaomura.com/jp/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch lang-switch-active">
+        <a href="https://takaomura.com/suisui">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <div class="suisui-top-main">
+      <h1>給水アプリの<br>デザイン</h1>
+      <p>UI/UXデザイン, UXリサーチ</p>
+      <img class="suisui-main-img" src="../../images/suisui/suisui-top-main.png" alt="トップイメージ">
+    </div>
+    <main class="work-main">
+      <article class="summary">
+        <h2 class="work-h2 suisui-blue">プロジェクトの概要</h2>
+        <section>
+          <h3>背景</h3>
+          <p><a href="https://www.statista.com/statistics/695540/japan-pet-bottles-recycling-rate/#:~:text=In%20the%20fiscal%20year%202020,remained%20at%20around%2020%20percent." target="_blank">日本におけるペットボトルのリサイクル率は高い水準<i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>ですが、よりエコであるためにはそもそもペットボトルを買わない方が良いはず。また、日本ではあまり水を飲むことによる健康効果が認知されていないように感じられます。</p>
+        </section>
+        <section>
+          <h3>課題</h3>
+          <p>どのようにして、<strong class="highlight suisui-blue-underline">マイボトルを使って水を飲むという、健康的かつエコな習慣を確立することができるだろうか？</strong></p>
+        </section>
+        <section>
+          <h3>解決策</h3>
+          <p>今回は、給水を「ゲーム化」して、給水を記録したり、近くの給水所を探せるアプリを作りました。</p>
+        </section>
+      </article>
+      <article class="context">
+        <h2 class="work-h2 suisui-blue">プロジェクトの前提</h2>
+        <p>このプロジェクトは個人制作として取り組みました。「身の回りのエコ」に関心があったので、<strong class="highlight suisui-blue-underline">気候変動の問題について、個人レベルで取り組めることはないか？</strong>ということをテーマに据えてみました。</p>
+      </article>
+      <article class="process">
+        <h2 class="work-h2 suisui-blue">プロジェクトのプロセス</h2>
+        <section class="process-desc">
+          <p>人間中心設計のアプローチをベースに、まず「身の回りのエコ」についてユーザーインタビューを実施し、デザインで解決する課題を定義し、解決策を設計・評価しました。</p>
+          <div class="hcd-process-img"><img src="../../images/hcd-process-jp.svg" alt="HCD process image"></div>
+        </section>
+        <section class="understand-define">
+          <h3>1. 要求の理解と要件の定義</h3>
+          <p>まず3人のモニターに対してユーザーインタビューを実施し、「身の回りのエコ」について理解することから始めました。「どういう行動をエコと捉えているか？」「エコな行動を促進する要素や阻害する要素はどういったものがあるか？」といった疑問に対してヒアリングをしていきました。</p>
+          <p>インタビューの後、得られた発言を親和図法（Affinity diagram）で分析してみました。</p>
+          <div class="affinity"><img src="../../images/suisui/suisui-affinity-diagram.png" alt="affinity diagram image"></div>
+          <p>その結果、大きく2つのことが分かりました：</p>
+          <ol>
+            <li><span class="list-item">日本においては、いくつかの代表的な行動が「エコ」と捉えられている（例：節電、マイバッグの使用、マイボトルの使用）</span></li>
+            <li><span class="list-item">生活の質/QOLを下げてまでエコに取り組むのはハードルが高い。「エコ」だけで何かに取り組むにはインセンティブが足りない。もっと別の価値が必要（例：エコであることと健康であることが同居している、など）</span></li>
+          </ol>
+          <p>この結果を踏まえて、<strong class="highlight suisui-blue-underline">「水をマイボトルでたくさん飲むこと」をサポートしてくれることで、エコ＋健康価値を享受できるアプリ</strong>が良いのでは？と思いつきました。そこでもう少し<a href="https://prtimes.jp/main/html/rd/p/000000125.000000563.html" target="_blank">デスクリサーチ <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>をしてみたところ、以下のことが分かりました：</p>
+          <ol>
+            <li><span class="list-item">マイボトルを、節約＆エコ志向で買うユーザーは多い</span></li>
+            <li><span class="list-item">マイボトルを買ってみたものの、継続して使うことができていないユーザーが多い</span></li>
+            <li><span class="list-item">マイボトルだけで量が足りずに飲み物を追加で購入しているユーザーも多い</span></li>
+          </ol>
+          <p>このリサーチ結果を踏まえて、「給水アプリ」のデザイン課題をこのように定めました：<strong class="highlight suisui-blue-underline">どのようにして、マイボトルを使って水を飲むという、健康的かつエコな習慣を確立することができるだろうか？</strong></p>
+          <p>この課題を解決するためのアプリの機能要件定義に際して、「習慣の確立」をどのようにサポートできるか、が最も重要だと考えました。そこで、<a href="shorturl.at/gwCP6" target="_blank">いくつかの文献 <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>を参考にして、「他ユーザーとの比較」や「ゲーム化」が行動変容に繋がるのではないか、という考えに至り、日々の給水を記録するベーシックな機能以外にもゲーム要素を加えていきました。</p>
+        </section>
+        <section class="design-evaluate">
+          <h3>2. 解決策の設計と評価</h3>
+          <p>まず、機能についての考えを整理するために、ローファイのスケッチを描き、ユーザー2名にコンセプトを評価してもらいました。</p>
+          <div class="lofi intermed"><a href="#modal-lofi" rel="modal:open"><img src="../../images/suisui/suisui-lofi.png" alt="suisui lo-fi prototype image"></a></div>
+          <p>ゲーム要素が多すぎて、逆に使いづらいというのがもっぱらの評価でした。特に、「リーダーボード」（他のユーザーと給水量をランキング形式で競う機能）に違和感があったようでした（確かに、人それぞれ一日に飲むべき水の量が違うのに、ランキングで競うのはおかしいと気づきました）。そこで、不要なゲーム要素を引いていき、アプリをもう少しシンプルにしていきました。</p>
+          <p>またスケッチと同時並行でビジュアルシステムも作っていきました。給水はどうしても面倒な作業だと思われやすいと感じ、「シンプルで可愛く、使いたくなる」ビジュアルを目指しました。</p>
+          <div class="visual-system-suisui intermed"><a href="#modal-visual-sys-suisui" rel="modal:open"><img src="../../images/suisui/suisui-visual-system.svg" alt="suisui visual system image"></a></div>
+          <p>最後に、ローファイのスケッチとビジュアルシステムを組み合わせて、ハイファイのプロトタイプを完成させました。</p>
+        </section>
+        <div class="btn-fill suisui-blue-bg suisui-blue-border"><a href="https://www.figma.com/proto/QfgtsejJR2PW3tTa9YYxJP/suisui?node-id=205%3A2585&scaling=scale-down&page-id=0%3A1&starting-point-node-id=205%3A2585&show-proto-sidebar=1" target="_blank">プロトタイプを見る<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="reflection">
+        <h2 class="work-h2 suisui-blue">次に向けての学び</h2>
+        <p>このアプリの最も重要な要素の一つである<strong class="highlight suisui-blue-underline">「習慣作り」はFigmaなどのプロトタイピングツールではなかなか評価しづらいと感じました。</strong>むしろ、実際にMVPを作ってユーザーにダウンロードしてもらい、数週間単位で試してもらう必要があると感じました。</p>
+        <p>また、<a href="https://www.amazon.co.jp/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%80%81%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9-%E8%84%B1%E3%80%8C%E7%94%BB%E9%9D%A2%E3%80%8D%E3%81%AE%E6%80%9D%E8%80%83%E6%B3%95-%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%83%BB%E3%82%AF%E3%83%AA%E3%82%B7%E3%83%A5%E3%83%8A/dp/4861009936/ref=sr_1_3?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3EE1VCY6UQ4RA&keywords=Best+interface+is+no+interface&qid=1648174291&sprefix=best+interface+is+no+interfac%2Caps%2C373&sr=8-3" target="_blank">“best interface is no interface” <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>（= No UI）ということも頭に入れておく必要があります。このアプリを使う上での最大の障壁の一つは間違いなく「給水の度にアプリを開いてマニュアルに記録する」必要性だと思うので、それ自体を自動化できればより良いユーザー体験を提供できる気がしています（例：スマートボトルで給水を自動で記録）。スマートボトルが難しければ、せめてウィジェットを用意してアプリを開く必要性をなくすこともできると思います。</p>
+      </article>
+    </main>
+    <aside class="other-pj">
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 suisui-blue">他のプロジェクト</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms other-work-container">
+            <a href="https://takaomura.com/jp/tms">
+              <div class="work-thumbnail"><img src="../../images/tms/tms-thumbnail.jpg" alt="TMSサムネイル"></div>
+              <h3>寄付ページのリ・デザイン</h3>
+              <p>レスポンシブWebサイト</p>
+            </a>
+          </div>
+          <div class="work-container work-batonne other-work-container">
+            <a href="https://takaomura.com/jp/batonne">
+              <div class="work-thumbnail"><img src="../../images/batonne/batonne-thumbnail.jpg" alt="Batonneサムネイル"></div>
+              <h3>フードシェアアプリのデザイン</h3>
+              <p>モバイルアプリ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-lofi" class="modal"><img src="../../images/suisui/suisui-lofi.png" alt="suisui lo-fi prototype image"></div>
+  <div id="modal-visual-sys-suisui" class="modal"><img src="../../images/suisui/suisui-visual-system.svg" alt="suisui visual system image"></div>
+  
+  <!--　Button to go to the top of the page	-->
+	<div class="page-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+  
+</body>
+</html>

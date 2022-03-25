@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>寄付ページのリ・デザイン | 大村崇寛</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"][href!="#modal-journey-tms"][href!="#modal-sitemap"][href!="#modal-visual-sys-tms"][href!="#modal-tms-before][href!="#modal-tms-after"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+</head>
+  
+<body>  
+  <div id="tms-wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com/jp">Work</a></li>
+          <li><a href="https://takaomura.com/jp/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch lang-switch-active">
+        <a href="https://takaomura.com/tms">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <div class="tms-top-main">
+      <h1>寄付ページ<br>リ・デザイン</h1>
+      <p>Webデザイン, UXリサーチ</p>
+      <img class="tms-main-img" src="../../images/tms/tms-top-main.png" alt="トップイメージ">
+    </div>
+    <main class="work-main">
+      <article class="summary">
+        <h2 class="work-h2 tms-orange">プロジェクトの概要</h2>
+        <section>
+          <h3>背景</h3>
+          <p><a href="https://www.npo-tms.or.jp/" target="_blank">東京メンタルヘルス・スクエア（TMS） <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>は、様々な心のケアを無料、もしくは低価格で実施しているNPO法人です。今回は、<strong class="highlight tms-orange-underline">資金調達面で</strong>課題を感じていました。</p>
+        </section>
+        <section>
+          <h3>課題</h3>
+          <p>どのようにして寄付経験をデザインすれば、TMSへの寄付を増やすことができるか？</p>
+        </section>
+        <section>
+          <h3>解決策</h3>
+          <p>レスポンシブなウェブページを実装し、Webサイトを訪問する潜在寄付者の体験をデザインしました。</p>
+        </section>
+      </article>
+      <article class="context">
+        <h2 class="work-h2 tms-orange">プロジェクトの背景</h2>
+        <p>このプロジェクトの前半部（リサーチフェーズ）はTMSとZS（前職）の間のプロボノプロジェクトとして実施し、私はプロジェクトリードとして参画しました。後半部（デザイン・実装フェーズ）は学校の課題として取り組みました。両方のフェーズで、TMSと近密に連携しました。</p>
+      </article>
+      <article class="process">
+        <h2 class="work-h2 tms-orange">プロジェクトのプロセス</h2>
+        <section class="process-desc">
+          <p>上記の通り、このプロジェクトは2つのフェーズで実施されました。最初のフェーズでは、ユーザーインタビューを実施し、潜在寄付者が寄付に至るまでの流れ・考えを理解しました。次のフェーズでは、最初のフェーズの結果をもとに寄付ページをデザイン、および実装しました。また、デザイン案に対して定量調査を行い、デザインの効果を測定しました。 </p>
+          <div class="tms-process-img"><img src="../../images/tms/tms-process-jp.svg" alt="TMS project process image"></div>
+        </section>
+        <section class="understand-define">
+          <h3>1. 要求の理解・要件の定義</h3>
+          <p>13名のモニター（20代〜50代、寄付経験あり・なし両方）をお呼びし、寄付に対する促進要因や阻害要因を探りました。寄付経験のないモニターから、寄付に対する<strong class="highlight tms-orange-underline">3つのハードルを抽出しました： (1) 団体に対する不信感、 (2) 団体の活動・実績の不透明性、  (3) 決済の手間</strong>.</p>
+          <div class="tms-insight-img"><img src="../../images/tms/tms-insight-jp.svg" alt="TMS insight image"></div>
+          <p>これらの情報、また寄付経験のあるモニターからの発言をもとに、寄付ジャーニーマップを作成し、寄付体験において寄付ページがどのような役割を担うことができるかを検討しました。今回は、ジャーニーの中の「寄付の検討」のステージに焦点を当てました。</p>
+          <div class="journey intermed"><a href="#modal-journey-tms" rel="modal:open"><img src="../../images/tms/tms-journey-jp.svg" alt="TMS journey image"></a></div>
+          <p>結論として、以下を醸成するようなストーリーが必要だと分かりました：</p>
+          <ol>
+            <li><span class="list-item">課題への共感と、課題の緊急性への理解</span></li>
+            <li><span class="list-item">実績や透明性による団体への信頼感</span></li>
+            <li><span class="list-item">寄付が役に立つという納得感</span></li>
+          </ol>
+        </section>
+        <section class="design-evaluate">
+          <h3>2. 解決策の設計と評価</h3>
+          <p>上記の要件を満たすためには、1ページでストーリーを伝えるようなランディングページが最も効果的だと考え、サイトマップを作成しました。</p>
+          <div class="sitemap intermed"><a href="#modal-sitemap" rel="modal:open"><img src="../../images/tms/tms-sitemap-jp.svg" alt="TMS site map image"></a></div>
+          <p>課題に共感してもらうことはもちろん重要ですが、「自殺」などの重いテーマを扱っているため、ユーザーに共感してもらいながらも、「TMSはより良い未来のためにメンタルヘルスの問題を解決しているんだ」と前向きになれるような空気感を大切にしました。</p>
+          <p>そこで、ホームページのメインカラー（オレンジ）を意識しつつ、「温かみ」を表現するために、暖色系（黄色～オレンジ）をメインカラーと定め、背景は白を基調とし、シンプルでミニマルな印象を目指しました。また、TMSが先進的な組織であることをユーザーに理解してもらうために、スマートでモダンなページにしたいと考えました。結果、以下のようなビジュアルシステムが完成しました：</p>
+          <div class="visual-system intermed"><a href="#modal-visual-sys-tms" rel="modal:open"><img src="../../images/tms/tms-visual-system.svg" alt="TMS visual system image"></a></div>
+          <p>ビジュアルシステムとサイトマップをもとに、ウェブサイトのデザイン、およびHTML/CSS/Javascriptを用いての実装を行いました。（本来であれば、ウェブサイトを実装する前にユーザビリティテストを実施するのがベストですが、学校のプロジェクトの締め切りの関係で今回はユーザビリティテストを飛ばしました。）</p>
+          <div class="intermed-flex">
+            <div class="tms-before intermed"><a href="#modal-tms-before" rel="modal:open"><img src="../../images/tms/tms-page-before.png" alt="TMS donation page before image"></a></div>
+            <div class="tms-after intermed"><a href="#modal-tms-after" rel="modal:open"><img src="../../images/tms/tms-page-after.png" alt="TMS donation page before image"></a></div>
+          </div>
+          <p>ウェブサイトを実装した後、定量調査（n = 20）を実施し、「寄付ページを通じて、潜在的な寄付者は、（1）活動に共感し、（2）団体を信頼し、（3）寄付の意思を示す」という仮説を検証しました。結果は以下のとおりでした：</p>
+          <ul class="survey-list">
+            <li><span class="text-lg">85%</span>の回答者が「課題に共感する」</li>
+            <li><span class="text-lg">65%</span>の回答者が「団体を信頼する」</li>
+            <li><span class="text-lg">45%</span>の回答者が「寄付をする意向」</li>
+          </ul>
+          <p><strong class="highlight tms-orange-underline">TMSを事前に知っている人がほとんどいなかったことを踏まえると、この結果は私の仮説を裏付けるものだと思います</strong>が、（1）サンプル数が少ないこと、（2）回答者がすべて私の友人・知人で、好意的に回答した可能性があるというバイアスがあることから、かなり大目に見る必要があると考えます。(バイアスを軽減するためにアンケートを匿名にしました)。</p>
+          <p>さらに、本当に効果を検証するためには、これをインターネットに広く公開して、寄付へのコンバージョン率などを調べる必要があります。</p>
+        </section>
+        <div class="btn-fill tms-orange-bg tms-orange-border"><a href="http://tokyo-d-plex.com/~2110oomura/donate" target="_blank">寄付ページを見る<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="reflection">
+        <h2 class="work-h2 tms-orange">次に向けての学び</h2>
+       <p><strong class="highlight tms-orange-underline">今回担当した寄付ページは「寄付体験」全体から見るとたった一部分に過ぎません。NPOの資金源として寄付をサステナブルにするには、</strong>潜在的な寄付者に様々な方法でリーチすることや、そして寄付者と継続的なコミュニケーションを取って寄付者とNPOの長期的な関係性を構築することも重要であり、しっかり取り組む必要があります。</p>
+        <p>このプロジェクトではTMSのメンバーと直接コミュニケーションを取っており、デザイナー以外の職種の方と連携する難しさ（例えば、デザインの意思決定を論理的・分かりやすく説明する、など）を学びました。</p>
+        <p>現在もTMSとコミュニケーションを継続しており、近日中に寄付ページを実際に更新できるように進めています。</p>
+      </article>
+    </main>
+    <aside class="other-pj">
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 tms-orange">他のプロジェクト</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms other-work-container">
+            <a href="https://takaomura.com/jp/batonne">
+              <div class="work-thumbnail"><img src="../../images/batonne/batonne-thumbnail.jpg" alt="Batonneサムネイル"></div>
+              <h3>フードシェアアプリのデザイン</h3>
+              <p>モバイルアプリ</p>
+            </a>
+          </div>
+          <div class="work-container work-suisui other-work-container">
+            <a href="https://takaomura.com/jp/suisui">
+              <div class="work-thumbnail"><img src="../../images/suisui/suisui-thumbnail.jpg" alt="suisuiサムネイル"></div>
+              <h3>給水アプリのデザイン</h3>
+              <p>モバイルアプリ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-journey-tms" class="modal"><img src="../../images/tms/tms-journey.svg" alt="TMS journey image"></div>
+  <div id="modal-visual-sys-tms" class="modal"><img src="../../images/tms/tms-visual-system.svg" alt="TMS visual system image"></div>
+  <div id="modal-sitemap" class="modal"><img src="../../images/tms/tms-sitemap.svg" alt="TMS site map image"></div>
+  <div id="modal-tms-before" class="modal"><img src="../../images/tms/tms-page-before.png" alt="TMS donation page before image"></div>
+  <div id="modal-tms-after" class="modal"><img src="../../images/tms/tms-page-after.png" alt="TMS donation page after image"></div>
+  
+  
+  <!--　Button to go to the top of the page	-->
+	<div class="page-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+  
+</body>
+</html>
