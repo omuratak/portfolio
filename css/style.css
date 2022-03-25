@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Consistent styling */
 body {
   font: 16px/1.5 "Lato", "Zen Kaku Gothic New", "sans-serif";
@@ -489,32 +490,62 @@ Process
 .persona:after {
   content: "User Persona"; }
 
+.persona-jp:after {
+  content: "ユーザーペルソナ"; }
+
 .journey:after {
   content: "User Journey"; }
+
+.journey-jp:after {
+  content: "ユーザージャーニー"; }
 
 .object:after {
   content: "Object Definition"; }
 
+.object-jp:after {
+  content: "オブジェクト定義"; }
+
 .object-rel:after {
   content: "Object Relationship Map"; }
+
+.object-rel-jp:after {
+  content: "オブジェクト間の関係性"; }
 
 .visual-system:after {
   content: "Visual System"; }
 
+.visual-system-jp:after {
+  content: "ビジュアルシステム"; }
+
 .wireframe:after {
   content: "Wireframe"; }
+
+.wireframe-jp:after {
+  content: "ワイヤーフレーム"; }
 
 .hifi:after {
   content: "Hi-fi Prototype"; }
 
+.hifi-jp:after {
+  content: "ハイファイプロトタイプ"; }
+
 .cart-v1:after {
   content: "Payment ~ Pick-up UI Version 1"; }
+
+.cart-v1-jp:after {
+  content: "決済〜受け取りUI バージョン1"; }
 
 .cart-v2:after {
   content: "Payment ~ Pick-up UI Version 2"; }
 
+.cart-v2-jp:after {
+  content: "決済〜受け取りUI バージョン2"; }
+
 .cart-v3:after {
   content: "Payment ~ Pick-up UI Version 3"; }
+
+.cart-v3-jp:after {
+  content: "決済〜受け取りUI バージョン3"; }
 
 /* ------------------------------
 button
@@ -801,11 +832,20 @@ Process
 .sitemap:after {
   content: "Site Map"; }
 
+.sitemap-jp:after {
+  content: "サイトマップ"; }
+
 .tms-before:after {
   content: "Donation page - Before"; }
 
+.tms-before-jp:after {
+  content: "寄付ページ: ビフォー"; }
+
 .tms-after:after {
   content: "Donation page - After"; }
+
+.tms-after-jp:after {
+  content: "寄付ページ: アフター"; }
 
 /* ------------------------------
 button
@@ -936,8 +976,14 @@ Process
 .lofi:after {
   content: "Lo-fi Prototype"; }
 
+.lofi-jp:after {
+  content: "ローファイプロトタイプ"; }
+
 .visual-system-suisui:after {
   content: "Visual System"; }
+
+.visual-system-suisui-jp:after {
+  content: "ビジュアルシステム"; }
 
 /* ------------------------------
 button

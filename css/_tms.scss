@@ -83,12 +83,24 @@ Process
   content: "Site Map";
 }
 
+.sitemap-jp:after {
+  content: "サイトマップ";
+}
+
 .tms-before:after {
   content: "Donation page - Before";
 }
 
+.tms-before-jp:after {
+  content: "寄付ページ: ビフォー";
+}
+
 .tms-after:after {
   content: "Donation page - After";
+}
+
+.tms-after-jp:after {
+  content: "寄付ページ: アフター";
 }
 
 /* ------------------------------

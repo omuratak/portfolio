@@ -136,8 +136,8 @@
           <h3>1. 要求の理解・要件の定義</h3>
           <p>アプリに必要な機能要件を洗い出すために、まずは「食」についての現状でのユーザーの経験を理解することから始めました。ユーザーインタビューを2件ほど実施し、それをベースにユーザーペルソナとユーザージャーニーを作成しました。（振り返ると、既にあったコンセプト案をより直接的にテストする方が良かったかもしれないと反省...）</p>
           <div class="intermed-flex">
-            <div class="persona intermed"><a href="#modal-persona" rel="modal:open"><img src="../../images/batonne/batonne-persona-jp.png" alt="Batonne persona image"></a></div>
-            <div class="journey intermed"><a href="#modal-journey" rel="modal:open"><img src="../../images/batonne/batonne-journey-jp.png" alt="Batonne journey image"></a></div>
+            <div class="persona persona-jp intermed"><a href="#modal-persona" rel="modal:open"><img src="../../images/batonne/batonne-persona-jp.png" alt="Batonne persona image"></a></div>
+            <div class="journey journey-jp intermed"><a href="#modal-journey" rel="modal:open"><img src="../../images/batonne/batonne-journey-jp.png" alt="Batonne journey image"></a></div>
           </div>
           <p>ユーザーモデリングを通してユーザーの現状を明確にした結果、<strong class="highlight batonne-green-underline">3つのインサイト</strong>を得られました:</p>
           <ol>
@@ -157,22 +157,22 @@
           <h3>2. 解決策の設計・評価</h3>
           <p>機能要件をもとに、今度は<strong class="highlight batonne-green-underline">オブジェクト指向で情報設計</strong>を行いました。まずオブジェクトを作成し、そのプロパティや取れるアクションを定義し、オブジェクト間の関係性、およびビュー（一覧 vs 詳細画面）を整理しました。</p>
           <div class="intermed-flex">
-            <div class="object intermed"><a href="#modal-object" rel="modal:open"><img src="../../images/batonne/batonne-object-jp.svg" alt="Batonne object image"></a></div>
-            <div class="object-rel intermed"><a href="#modal-object-rel" rel="modal:open"><img src="../../images/batonne/batonne-object-rel-jp.svg" alt="Batonne object relationship image"></a></div>
+            <div class="object object-jp intermed"><a href="#modal-object" rel="modal:open"><img src="../../images/batonne/batonne-object-jp.svg" alt="Batonne object image"></a></div>
+            <div class="object-rel object-rel-jp intermed"><a href="#modal-object-rel" rel="modal:open"><img src="../../images/batonne/batonne-object-rel-jp.svg" alt="Batonne object relationship image"></a></div>
           </div>
           <p>情報設計をベースにして、次に<strong class="highlight batonne-green-underline">ワイヤーフレーム</strong>を作成しました。そのワイヤーフレームを、3件のユーザビリティテストを実施し、ユーザーフローなどに大きな問題がないことを確認しました。また、ワイヤーフレームの作成と同時並行でビジュアルシステムやコンポーネントの設計を進めました。そして、ワイヤーフレームとビジュアルシステムを掛け合わせて、<strong class="highlight batonne-green-underline">ハイファイのプロトタイプ</strong>を作成しました。</p>
           <div class="intermed-flex">
-            <div class="visual-system intermed"><a href="#modal-visual-sys" rel="modal:open"><img src="../../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></a></div>
-            <div class="wireframe intermed"><a href="#modal-wireframe" rel="modal:open"><img src="../../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></a></div>
-            <div class="hifi intermed"><a href="#modal-hifi" rel="modal:open"><img src="../../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></a></div>
+            <div class="visual-system visual-system-jp intermed"><a href="#modal-visual-sys" rel="modal:open"><img src="../../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></a></div>
+            <div class="wireframe wireframe-jp intermed"><a href="#modal-wireframe" rel="modal:open"><img src="../../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></a></div>
+            <div class="hifi hifi-jp intermed"><a href="#modal-hifi" rel="modal:open"><img src="../../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></a></div>
           </div>
           <p>プロトタイプを使って<strong class="highlight batonne-green-underline">ユーザビリティテスト</strong>を3ラウンドを実施し、ユーザビリティ上の問題をその度に潰していきました。エッジケース（複数の店舗から食材を購入する）における会計〜店舗へのナビゲーション〜受け渡しのUIの検討に最も苦労しました。 </p>
           <p>最初は、店舗ごとに決済・ナビゲーション・受け取りをするようにUIを設計していました。しかし、それだと複数の店舗から食品を購入する場合に会計の操作を複数回行わなければいけず、非常に手間がかかることが分かりました。</p>
-          <div class="cart-v1 intermed"><a href="#modal-cart-v1" rel="modal:open"><img src="../../images/batonne/batonne-cart-v1.png" alt="Batonne cart UI version 1 image"></a></div>
+          <div class="cart-v1 cart-v1-jp intermed"><a href="#modal-cart-v1" rel="modal:open"><img src="../../images/batonne/batonne-cart-v1.png" alt="Batonne cart UI version 1 image"></a></div>
           <p>そこで、カートに入れた食品を一度にまとめて決済できるように決済フローを改善しました。ナビゲーション〜受け取りに関しては、受け取る必要のある食品をリストでまとめて表示し、また複数店舗へのルートを一本道で表示させました。しかし、それだと情報過多気味になってしまい、逆にユーザーを混乱させてしまいました。</p>
-          <div class="cart-v2 intermed"><a href="#modal-cart-v2" rel="modal:open"><img src="../../images/batonne/batonne-cart-v2.png" alt="Batonne cart UI version 2 image"></a></div>
+          <div class="cart-v2 cart-v2-jp intermed"><a href="#modal-cart-v2" rel="modal:open"><img src="../../images/batonne/batonne-cart-v2.png" alt="Batonne cart UI version 2 image"></a></div>
           <p>これを受けて、「受け取る食品のリスト」と「それぞれの店舗へのルート」を分けて情報を分散しました。また、表示する店舗を現在地からの距離ベースで近い順に並び替えることで、どの店舗に最初に行くべきかを明確にしました。（振り返ると、to-beのユーザージャーニーをしっかりと描いて決済〜ナビゲーション〜受け取りのユーザーフローをより明確にしておくことで、デザインの修正工程をへらすことができたかもしれないと反省...）</p>
-          <div class="cart-v3 intermed"><a href="#modal-cart-v3" rel="modal:open"><img src="../../images/batonne/batonne-cart-v3.png" alt="Batonne cart UI version 3 image"></a></div>
+          <div class="cart-v3 cart-v3-jp intermed"><a href="#modal-cart-v3" rel="modal:open"><img src="../../images/batonne/batonne-cart-v3.png" alt="Batonne cart UI version 3 image"></a></div>
         </section>
         <div class="btn-fill batonne-green-bg batonne-green-border"><a href="https://www.figma.com/proto/6YDXjaBaDpuixkbZNqZ4xy/TDP_food-share?node-id=304%3A3653&scaling=scale-down&page-id=122%3A874&starting-point-node-id=304%3A3653" target="_blank">プロトタイプを見る<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
       </article>
@@ -214,10 +214,10 @@
   </div> <!-- end #wrapper -->
   
   <!-- Modal boxes  -->
-  <div id="modal-persona" class="modal"><img src="../../images/batonne/batonne-persona.png" alt="Batonne persona image"></div>
-  <div id="modal-journey" class="modal"><img src="../../images/batonne/batonne-journey.png" alt="Batonne journey image"></div>
-  <div id="modal-object" class="modal"><img src="../../images/batonne/batonne-object.svg" alt="Batonne object image"></div>
-  <div id="modal-object-rel" class="modal"><img src="../../images/batonne/batonne-object-rel.svg" alt="Batonne object relationship image"></div>
+  <div id="modal-persona" class="modal"><img src="../../images/batonne/batonne-persona-jp.png" alt="Batonne persona image"></div>
+  <div id="modal-journey" class="modal"><img src="../../images/batonne/batonne-journey-jp.png" alt="Batonne journey image"></div>
+  <div id="modal-object" class="modal"><img src="../../images/batonne/batonne-object-jp.svg" alt="Batonne object image"></div>
+  <div id="modal-object-rel" class="modal"><img src="../../images/batonne/batonne-object-rel-jp.svg" alt="Batonne object relationship image"></div>
   <div id="modal-visual-sys" class="modal"><img src="../../images/batonne/batonne-visual-system.png" alt="Batonne visual system image"></div>
   <div id="modal-wireframe" class="modal"><img src="../../images/batonne/batonne-wireframe.png" alt="Batonne wireframe image"></div>
   <div id="modal-hifi" class="modal"><img src="../../images/batonne/batonne-hifi.png" alt="Batonne hi-fi prototype image"></div>

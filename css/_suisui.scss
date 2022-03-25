@@ -62,11 +62,19 @@ Main visual
 Process 
 ------------------------------ */
 .lofi:after {
-  content: "Lo-fi Prototype";  
+  content: "Lo-fi Prototype"; ;
+}
+
+.lofi-jp:after {
+  content: "ローファイプロトタイプ";
 }
 
 .visual-system-suisui:after {
   content: "Visual System";
+}
+
+.visual-system-suisui-jp:after {
+  content: "ビジュアルシステム";
 }
 
 /* ------------------------------
