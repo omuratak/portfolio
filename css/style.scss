@@ -56,6 +56,12 @@ img {
 	animation: wrapper-fadein 1s;
 }
 
+#batonne-wrapper,
+#suisui-wrapper,
+#tms-wrapper {
+  animation: wrapper-fadein 1s;
+}
+
 @keyframes wrapper-fadein {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
