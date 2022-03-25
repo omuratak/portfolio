@@ -31,7 +31,7 @@
   <!-- Smooth scrolling --> 
   <script>
       $(function(){
-       $('a[href^="#"][href!="#modal-journey-tms"][href!="#modal-sitemap"][href!="#modal-visual-sys-tms"][href!="#modal-tms-before][href!="#modal-tms-after"]').click(function() {
+       $('a[href^="#"][href!="#modal-journey-tms"][href!="#modal-sitemap"][href!="#modal-visual-sys-tms"][href!="#modal-tms-before"][href!="#modal-tms-after"]').click(function() {
           var href= $(this).attr("href");
           var target = $(href == "#" || href == "" ? 'html' : href);
           var position = target.offset().top;       
