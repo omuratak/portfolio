@@ -460,7 +460,7 @@ Main
   .other-pj-wrapper ol {
     list-style: decimal inside;
     text-indent: -5%;
-    margin-left: 5%; }
+    margin: 0 0 40px 5%; }
     .work-main ol li,
     .other-pj-wrapper ol li {
       margin-bottom: 10px; }
