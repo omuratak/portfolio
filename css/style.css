@@ -150,6 +150,9 @@ nav ul {
 .lang-switch-active .lang-jp {
   background-image: url("../images/lang-jp-white.svg"); }
 
+.lang-switch:hover {
+  opacity: 0.7; }
+
 /* ------------------------------
 h1
 ------------------------------ */
