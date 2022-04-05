@@ -1,0 +1,160 @@
+// Scss Document
+
+/*
+
+Wannote
+
+*/
+
+/* =================================================================================================
+SP
+================================================================================================= */
+/* ------------------------------
+Color
+------------------------------ */
+.wannote-yellow {
+  color: $wannote-yellow;
+}
+
+.wannote-yellow:after,
+.wannote-yellow-bg {
+  background: $wannote-yellow;
+}
+
+.btn-black-text a {
+  color: $black;
+}
+
+.wannote-yellow-border {
+  border: 1px solid $wannote-yellow;
+}
+
+.wannote-yellow-underline {
+  text-decoration-color: $wannote-yellow-20;
+}
+
+/* ------------------------------
+Main visual
+------------------------------ */
+.wannote-top-main {
+  background: $wannote-yellow;
+  color: $black;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 40px;
+  
+  h1 {
+    padding-top: 120px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-left: 5%;
+  }
+  
+  .wannote-main-img {
+    position: absolute;
+    top: 0;
+    right: -120px;
+  }
+}
+
+/* ------------------------------
+Process 
+------------------------------ */
+.journey-tobe:after {
+  content: "TO-BE User Journey";
+}
+
+.journey-tobe-jp:after {
+  content: "TO-BEユーザージャーニー";
+}
+
+.paper:after {
+  content: "Paper Prototype";
+}
+
+.paper-jp:after {
+  content: "ペーパープロトタイプ";
+}
+
+.wannote-yellow-bg:hover{
+  background: $white;
+  
+  a {
+   color: $black;
+  }
+}
+
+/* =================================================================================================
+TB
+================================================================================================= */
+@media screen and (min-width:600px) {
+  /* ------------------------------
+  Main visual
+  ------------------------------ */
+  .wannote-top-main {
+    height: 400px;
+    margin-bottom: 40px;
+
+    h1 {
+      padding-top: 140px;
+    }
+
+    .wannote-main-img {
+      top: -50px;
+      right: -280px;
+    }
+  }
+  
+  /* ------------------------------
+  Intermediate products 
+  ------------------------------ */  
+  .wannote-persona {
+    width: 40%;
+    height: 220px;
+  }
+
+  .paper {
+    width: 30%;
+  }
+  
+  .wannote-visual-system {
+    height: 170px;
+  }
+  
+  #modal-journey-tobe,
+  #modal-paper {
+    max-width: 1000px;
+  }
+}
+
+
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width:1000px) {  
+  /* ------------------------------
+  main visual
+  ------------------------------ */
+  .wannote-top-main {
+    margin: 0 auto 60px;
+    height: 650px;
+    
+    h1 {
+      padding-top: 260px;
+      margin: 0 0 20px 10%;
+    }
+    
+    p {
+      margin: 0 0 20px 10%;
+    }
+    
+    .wannote-main-img {
+      top: -150px;
+      right: -250px;
+    }
+  }
+}
+

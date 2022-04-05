@@ -1046,3 +1046,120 @@ PC
     .suisui-top-main .suisui-main-img {
       top: -150px;
       right: -250px; } }
+/*
+
+Wannote
+
+*/
+/* =================================================================================================
+SP
+================================================================================================= */
+/* ------------------------------
+Color
+------------------------------ */
+.wannote-yellow {
+  color: #FFBE00; }
+
+.wannote-yellow:after,
+.wannote-yellow-bg {
+  background: #FFBE00; }
+
+.btn-black-text a {
+  color: #444; }
+
+.wannote-yellow-border {
+  border: 1px solid #FFBE00; }
+
+.wannote-yellow-underline {
+  text-decoration-color: #FFF04E; }
+
+/* ------------------------------
+Main visual
+------------------------------ */
+.wannote-top-main {
+  background: #FFBE00;
+  color: #444;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 40px; }
+  .wannote-top-main h1 {
+    padding-top: 120px;
+    margin-bottom: 10px; }
+  .wannote-top-main p {
+    margin-left: 5%; }
+  .wannote-top-main .wannote-main-img {
+    position: absolute;
+    top: 0;
+    right: -120px; }
+
+/* ------------------------------
+Process 
+------------------------------ */
+.journey-tobe:after {
+  content: "TO-BE User Journey"; }
+
+.journey-tobe-jp:after {
+  content: "TO-BEユーザージャーニー"; }
+
+.paper:after {
+  content: "Paper Prototype"; }
+
+.paper-jp:after {
+  content: "ペーパープロトタイプ"; }
+
+.wannote-yellow-bg:hover {
+  background: #fff; }
+  .wannote-yellow-bg:hover a {
+    color: #444; }
+
+/* =================================================================================================
+TB
+================================================================================================= */
+@media screen and (min-width: 600px) {
+  /* ------------------------------
+  Main visual
+  ------------------------------ */
+  .wannote-top-main {
+    height: 400px;
+    margin-bottom: 40px; }
+    .wannote-top-main h1 {
+      padding-top: 140px; }
+    .wannote-top-main .wannote-main-img {
+      top: -50px;
+      right: -280px; }
+
+  /* ------------------------------
+  Intermediate products 
+  ------------------------------ */
+  .wannote-persona {
+    width: 40%;
+    height: 220px; }
+
+  .paper {
+    width: 30%; }
+
+  .wannote-visual-system {
+    height: 170px; }
+
+  #modal-journey-tobe,
+  #modal-paper {
+    max-width: 1000px; } }
+/* =================================================================================================
+PC
+================================================================================================= */
+@media screen and (min-width: 1000px) {
+  /* ------------------------------
+  main visual
+  ------------------------------ */
+  .wannote-top-main {
+    margin: 0 auto 60px;
+    height: 650px; }
+    .wannote-top-main h1 {
+      padding-top: 260px;
+      margin: 0 0 20px 10%; }
+    .wannote-top-main p {
+      margin: 0 0 20px 10%; }
+    .wannote-top-main .wannote-main-img {
+      top: -150px;
+      right: -250px; } }

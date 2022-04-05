@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>犬の健康管理アプリデザイン | 大村崇寛</title>
+  
+  <!--　favicon	-->
+  <link rel="icon" href="../../images/takaomura-favicon.svg">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"][href!="#modal-persona"][href!="#modal-journey"][href!="#modal-journey-tobe"][href!="#modal-object"][href!="#modal-object-rel"][href!="#modal-visual-sys"][href!="#modal-paper"][href!="#modal-hifi"][href!="#modal-cart-v1"][href!="#modal-cart-v2"][href!="#modal-cart-v3"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+  <!-- Delay link access -->
+  <script>
+    $(".link-delay").on("click", function() {
+      event.preventDefault();
+      var link = $(this).attr('href');
+      setTimeout(function() {
+        location.href= link;
+      }, 250);
+    });
+  </script>
+  
+</head>
+  
+<body>  
+  <div id="wannote-wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com/jp">Work</a></li>
+          <li><a href="https://takaomura.com/jp/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch lang-switch-active">
+        <a class="link-delay" href="https://takaomura.com/wannote">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <div class="wannote-top-main">
+      <h1>犬の健康管理<br>アプリデザイン</h1>
+      <p>UI/UXデザイン</p>
+      <img class="wannote-main-img" src="../../images/wannote/wannote-top-main.png" alt="トップイメージ">
+    </div>
+    <main class="work-main">
+      <article class="summary">
+        <h2 class="work-h2 wannote-yellow">プロジェクトの概要</h2>
+        <section>
+          <h3>背景</h3>
+          <p>私は犬を飼っており、自分の犬の健康管理をもっとしっかり行いたいと考えていました。特に、予防接種や動物病院への通院時のやりとりが全て紙ベースで不便を感じていました。そこで、犬の健康管理をもっとデジタル化できないか？と考えてこのプロジェクトを始めました。</p>
+        </section>
+        <section>
+          <h3>ターゲット</h3>
+          <p>犬を飼っている人（および獣医・動物病院）←今回は犬を飼っているユーザーにフォーカス</p>
+        </section>
+        <section>
+          <h3>犬を飼う側のターゲットの課題</h3>
+          <p>犬の健康に関わるモノが紙媒体なので（ワクチンの接種記録や通院時の処方箋など）、管理が煩雑になりやすい。複数の動物病院に通う場合、カルテが病院間で共有されていないので、事情や通院歴の説明を毎回しないといけないのが不便。通院時に動物の面倒を見ながら、かつ獣医のアドバイスを聞きながら同時にメモを取るのが大変。</p>
+        </section>
+        <section>
+          <h3>獣医側のターゲットの課題（仮説）</h3>
+          <p>（※獣医にはヒアリングできていないので仮説）患者が複数の動物病院に通院する場合、病院間で連携が取れない。飼い主へのヒアリングが飼い主の記憶ベースなので曖昧な情報が多く、診断に苦労することがある。</p>
+        </section>
+        <section>
+          <h3>解決策</h3>
+          <p>犬の健康管理（ワクチン接種記録、通院歴、カルテ、日常の健康記録）をデジタル化し、飼い主と動物病院の連携をよりスムーズにするアプリを設計しました。</p>
+        </section>
+      </article>
+      <article class="context">
+        <h2 class="work-h2 wannote-yellow">プロジェクトの前提</h2>
+        <p>このプロジェクトは、個人的なプロジェクトとして取り組んだため、リサーチ・デザインなど全てを一人で実施しました。</p>
+      </article>
+      <article class="process">
+        <h2 class="work-h2 wannote-yellow">プロジェクトのプロセス</h2>
+        <section class="process-desc">
+          <p>人間中心設計のアプローチをベースに、まず「動物病院に行く前後の行動」についてユーザーインタビューを実施し、デザインで解決する課題を定義し、解決策を設計・評価しました。</p>
+          <div class="hcd-process-img"><img src="../../images/hcd-process-jp.svg" alt="HCD process image"></div>
+        </section>
+        <section class="understand-define">
+          <h3>1. 要求の理解・要件の定義</h3>
+          <p>まず、犬を飼っている2名の知り合いにインタビューを実施し、直近で動物病院に飼い犬を連れて行ったときの体験を詳細にヒアリングしました。さらにその結果をもとにペルソナと現状のジャーニー（AS-IS）を作成しました。</p>
+          <div class="intermed-flex">
+            <div class="persona persona-jp wannote-persona intermed"><a href="#modal-persona" rel="modal:open"><img src="../../images/wannote/wannote-persona-jp.png" alt="wannote persona image"></a></div>
+            <div class="journey journey-jp intermed"><a href="#modal-journey" rel="modal:open"><img src="../../images/wannote/wannote-journey-asis-jp.svg" alt="wannote journey image"></a></div>
+          </div>
+          <p>さらに、あるべきジャーニー（TO-BE）を併せて検討することで、あるべき体験の姿をイメージしやすくしました。</p>
+          <div class="journey-tobe journey-tobe-jp intermed"><a href="#modal-journey-tobe" rel="modal:open"><img src="../../images/wannote/wannote-journey-tobe-jp.svg" alt="wannote to-be journey image"></a></div>
+          <p>これらのインサイトをもとに、以下のように機能要件をまとめました：</p>
+          <ol>
+            <li><span class="list-item">犬の具合について<strong>メモを取る機能</strong></span></li>
+            <li><span class="list-item">動物病院での診察を<strong>予約する機能</strong></span></li>
+            <li><span class="list-item"><strong>問診票を事前に共有する機能</strong></span></li>
+            <li><span class="list-item">通院後の<strong>診察内容・処方箋を見返す機能</strong></span></li>
+          </ol>
+        </section>
+        <section class="design-evaluate">
+          <h3>2. 解決策の設計・評価</h3>
+          <p>機能要件をもとに、今度はオブジェクト指向で情報設計を行いました。まずオブジェクトを作成し、そのプロパティや取れるアクションを定義し、オブジェクト間の関係性、およびビュー（一覧 vs 詳細画面）を整理しました。</p>
+          <div class="intermed-flex">
+            <div class="object object-jp intermed"><a href="#modal-object" rel="modal:open"><img src="../../images/wannote/wannote-object-jp.svg" alt="wannote object image"></a></div>
+            <div class="object-rel object-rel-jp intermed"><a href="#modal-object-rel" rel="modal:open"><img src="../../images/wannote/wannote-object-rel-jp.svg" alt="wannote object relationship image"></a></div>
+          </div>
+          <p>情報設計をベースにして、スケッチを描きました。そのスケッチを使って簡易的なコンセプトテストを実施し、ユーザーフローに大きな問題がないことを確認しました。その後ビジュアルシステムを構築し、スケッチとビジュアルシステムを掛け合わせて、<strong class="highlight wannote-yellow-underline">ハイファイのプロトタイプ</strong>を作成しました。今回は一つの流れに絞ってプロトタイプを作成しました（アカウント登録 → オンボーディング → メモの記入 → 病院の予約 → 予約の変更 → 診察内容の確認 → マイページの確認）。</p>
+          <div class="intermed-flex">
+            <div class="visual-system visual-system-jp wannote-visual-system intermed"><a href="#modal-visual-sys" rel="modal:open"><img src="../../images/wannote/wannote-visual-system.svg" alt="wannote visual system image"></a></div>
+            <div class="paper paper-jp intermed"><a href="#modal-paper" rel="modal:open"><img src="../../images/wannote/wannote-paper.png" alt="wannote paper prototype image"></a></div>
+            <div class="hifi hifi-jp intermed"><a href="#modal-hifi" rel="modal:open"><img src="../../images/wannote/wannote-hifi.png" alt="wannote hi-fi prototype image"></a></div>
+          </div>
+          <p>プロトタイプを使って<strong class="highlight wannote-yellow-underline">ユーザビリティテスト</strong>を実施し、再度ユーザーフローに問題がないことを確認し、またユーザビリティ上の微細な問題を発見してUIを改善しました。概ね分かりやすく自然に使えるUIという評価を得ることができました。</p>
+        </section>
+        <div class="btn-fill wannote-yellow-bg wannote-yellow-border btn-black-text"><a href="https://www.figma.com/proto/rTE540dDPQSZlKigaEA4vo/WanNote?node-id=21%3A1547&scaling=scale-down&page-id=10%3A4&starting-point-node-id=21%3A1547" target="_blank">プロトタイプを見る<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="reflection">
+        <h2 class="work-h2 wannote-yellow">次に向けての学び</h2>
+        <p></p>
+        <p>今回、オブジェクト指向のUIデザインを心がけ、なるべくモードレスなUIにしようと努めたため、余計な画面が少なく済み、かつユーザーにとって自然と使える分かりやすいデザインにできたと感じました。</p>
+        <p>実際にこのプロダクトを世に出すとしたら、獣医側の従来の業務フローをデジタル化するにあたっての問題が多く発生すると予想されるため、簡単にはいかないと思いますが、一人の飼い主としての「こんなプロダクトがあったらいいな」という想いを具現化でき、やりがいを感じることができました。</p>
+      </article>
+    </main>
+    <aside class="other-pj">
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 wannote-yellow">他のプロジェクト</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms other-work-container">
+            <a href="https://takaomura.com/jp/tms">
+              <div class="work-thumbnail"><img src="../../images/tms/tms-thumbnail.jpg" alt="TMSサムネイル"></div>
+              <h3>寄付ページリニューアル</h3>
+              <p>レスポンシブWebサイト</p>
+            </a>
+          </div>
+          <div class="work-container work-batonne other-work-container">
+            <a href="https://takaomura.com/jp/batonne">
+              <div class="work-thumbnail"><img src="../../images/batonne/batonne-thumbnail.jpg" alt="Batonneサムネイル"></div>
+              <h3>フードシェアアプリデザイン</h3>
+              <p>モバイルアプリ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-persona" class="modal"><img src="../../images/wannote/wannote-persona-jp.png" alt="wannote persona image"></div>
+  <div id="modal-journey" class="modal"><img src="../../images/wannote/wannote-journey-asis-jp.svg" alt="wannote journey image"></div>
+  <div id="modal-journey-tobe" class="modal"><img src="../../images/wannote/wannote-journey-tobe-jp.svg" alt="wannote TO-BE journey image"></div>
+  <div id="modal-object" class="modal"><img src="../../images/wannote/wannote-object-jp.svg" alt="wannote object image"></div>
+  <div id="modal-object-rel" class="modal"><img src="../../images/wannote/wannote-object-rel-jp.svg" alt="wannote object relationship image"></div>
+  <div id="modal-visual-sys" class="modal"><img src="../../images/wannote/wannote-visual-system.svg" alt="wannote visual system image"></div>
+  <div id="modal-paper" class="modal"><img src="../../images/wannote/wannote-paper.png" alt="wannote paper prototype image"></div>
+  <div id="modal-hifi" class="modal"><img src="../../images/wannote/wannote-hifi.png" alt="wannote hi-fi prototype image"></div>
+  
+  <!--　Button to go to the top of the page	-->
+	<div class="page-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+  
+</body>
+</html>

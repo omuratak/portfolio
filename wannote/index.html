@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dog Health App Design | Takahiro Omura</title>
+  
+  <!--　favicon	-->
+  <link rel="icon" href="../images/takaomura-favicon.svg">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- javascript --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- JQuery	--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slick slider	--> 
+  <script src="https://kit.fontawesome.com/82e87a9374.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <!-- Smooth scrolling --> 
+  <script>
+      $(function(){
+       $('a[href^="#"][href!="#modal-persona"][href!="#modal-journey"][href!="#modal-journey-tobe"][href!="#modal-object"][href!="#modal-object-rel"][href!="#modal-visual-sys"][href!="#modal-paper"][href!="#modal-hifi"][href!="#modal-cart-v1"][href!="#modal-cart-v2"][href!="#modal-cart-v3"]').click(function() {
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;       
+           $('body,html').animate({scrollTop:position}, 400, 'swing');
+           return false;
+       });
+      });
+    </script> 
+
+  <!-- Page top --> 
+  <script>
+      $(document).ready(function() {
+        var pagetop = $('.page-top');
+        $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+           } else {
+                pagetop.fadeOut();
+                }
+           });
+      });
+    </script> 
+  
+  <!-- Toggle language switch button when clicked  -->
+  <script>
+    $(function(){
+      $('.lang-switch a').click(function(){
+        $('.lang-switch').toggleClass("lang-switch-active");
+      });
+    });
+    </script>
+  
+  <!-- Delay link access -->
+  <script>
+    $(".link-delay").on("click", function() {
+      event.preventDefault();
+      var link = $(this).attr('href');
+      setTimeout(function() {
+        location.href= link;
+      }, 250);
+    });
+  </script>
+  
+</head>
+  
+<body>  
+  <div id="wannote-wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://takaomura.com">Work</a></li>
+          <li><a href="https://takaomura.com/about">About</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <a class="link-delay" href="https://takaomura.com/jp/wannote">
+          <span class="lang-en"></span>
+          <span class="lang-jp"></span>
+        </a>
+      </div>
+    </header>
+    <div class="wannote-top-main">
+      <h1>Dog Health App<br>Design</h1>
+      <p>UI/UX Design</p>
+      <img class="wannote-main-img" src="../images/wannote/wannote-top-main.png" alt="トップイメージ">
+    </div>
+    <main class="work-main">
+      <article class="summary">
+        <h2 class="work-h2 wannote-yellow">Project Summary</h2>
+        <section>
+          <h3>Background</h3>
+          <p>I adopted a dog in 2020, and have wanted to better manage my dog's health. In particular, all of the communication around my dog's health (e.g. vaccinations, vet visits) was paper-based, which felt inconvenient. Hence, I wondered if I could make my dog's health management more "digitalized". </p>
+        </section>
+        <section>
+          <h3>Target</h3>
+          <p>Users who have pet dogs (and vets). This time I focused on pet owners instead of vets.</p>
+        </section>
+        <section>
+          <h3>Issues surrounding pet owners</h3>
+          <p>Everything about my dog's health is paper-based (e.g. vaccination records, prescriptions for hospital visits, etc.), and hence keeping everything under control can be a bit tricky. For example, when users take their dogs to different vets, the medical records are not shared among vets, so it is inconvenient for the the user to have to explain the situation time and again. It is also difficult to simultaneously take notes while listening to the vet's advice.</p>
+        </section>
+        <section>
+          <h3>Issues surrounding vets (hypothetical)</h3>
+          <p>(*hypothesized since I have not been able to interview vets) When a patient sees multiple vets, there is no coordination / information sharing among the vets.</p>
+        </section>
+        <section>
+          <h3>Solution</h3>
+          <p>I designed a mobile application that digitizes dog health management (e.g. vaccination records, vet visit history, medical records, and daily health records) to facilitate collaboration between owners and vets.</p>
+        </section>
+      </article>
+      <article class="context">
+        <h2 class="work-h2 wannote-yellow">Context</h2>
+        <p>I worked on this project as a side-project, and thus I worked on all of the research & design.</p>
+      </article>
+      <article class="process">
+        <h2 class="work-h2 wannote-yellow">Process</h2>
+        <section class="process-desc">
+          <p>I followed the human centered design approach. I first conducted user interviews to understand behaviors before/during/after a vet visit, defined the design problem, and then designed and tested the solution.</p>
+          <div class="hcd-process-img"><img src="../images/hcd-process.svg" alt="HCD process image"></div>
+        </section>
+        <section class="understand-define">
+          <h3>1. Understand and Define</h3>
+          <p>First, I interviewed 2 friends who owned dogs, and learned about their recent experiences taking their dogs to the vet. Then, based on that, I created a persona and user journey (AS-IS).</p>
+          <div class="intermed-flex">
+            <div class="persona wannote-persona intermed"><a href="#modal-persona" rel="modal:open"><img src="../images/wannote/wannote-persona.png" alt="wannote persona image"></a></div>
+            <div class="journey intermed"><a href="#modal-journey" rel="modal:open"><img src="../images/wannote/wannote-journey-asis.svg" alt="wannote journey image"></a></div>
+          </div>
+          <p>In addition, I created an ideal user journey (TO-BE), in order to highlight what the experience should be.</p>
+          <div class="journey-tobe intermed"><a href="#modal-journey-tobe" rel="modal:open"><img src="../images/wannote/wannote-journey-tobe.svg" alt="wannote to-be journey image"></a></div>
+          <p>Based on the insights, I decided on the below features:</p>
+          <ol>
+            <li><span class="list-item"><strong>A memo feature</strong> to write down their dogs' health condition</span></li>
+            <li><span class="list-item"><strong>A reservation feature</strong> to search and reserve a vet visit</span></li>
+            <li><span class="list-item"><strong>A feature to share medical questionnaires</strong> with the vet beforehand</span></li>
+            <li><span class="list-item"><strong>A feature to review details around treatments and prescriptions</strong></span></li>
+          </ol>
+        </section>
+        <section class="design-evaluate">
+          <h3>2. Design and Evaluate</h3>
+          <p>Based on the features, I then created the information architecture in an object-oriented manner. I first created objects, </p>
+          <p>Given the features I decided on, I defined the information architecture in an object-oriented manner. We first created objects, their properties, and actions. After that, we organized the relationships between the objects and their views (collection vs. single).</p>
+          <div class="intermed-flex">
+            <div class="object intermed"><a href="#modal-object" rel="modal:open"><img src="../images/wannote/wannote-object.svg" alt="wannote object image"></a></div>
+            <div class="object-rel intermed"><a href="#modal-object-rel" rel="modal:open"><img src="../images/wannote/wannote-object-rel.svg" alt="wannote object relationship image"></a></div>
+          </div>
+          <p>Based on the information architecture, I sketched a rough concept/prototype. Using this sketch, I conducted a quick & easy concept test to confirm whether the user flow had any issues. After that, I created the visual system, and combined that with the paper sketch to create a hi-fi prototype. For this project, I focused on one user flow: Account registration → Memo → Reservation → Change reservation → Check treatment details → Check my page.</p>
+          <div class="intermed-flex">
+            <div class="visual-system wannote-visual-system intermed"><a href="#modal-visual-sys" rel="modal:open"><img src="../images/wannote/wannote-visual-system.svg" alt="wannote visual system image"></a></div>
+            <div class="paper intermed"><a href="#modal-paper" rel="modal:open"><img src="../images/wannote/wannote-paper.png" alt="wannote paper prototype image"></a></div>
+            <div class="hifi intermed"><a href="#modal-hifi" rel="modal:open"><img src="../images/wannote/wannote-hifi.png" alt="wannote hi-fi prototype image"></a></div>
+          </div>
+          <p>I used the prototype and conducted a usability test. I was able to confirm that there were no big issues with the overall user flow, aside from a few minor usability issues. The user evaluated the design as "Easy and intuitive to use."</p>
+        </section>
+        <div class="btn-fill wannote-yellow-bg wannote-yellow-border btn-black-text"><a href="https://www.figma.com/proto/rTE540dDPQSZlKigaEA4vo/WanNote?node-id=21%3A1547&scaling=scale-down&page-id=10%3A4&starting-point-node-id=21%3A1547" target="_blank">See the final prototype<i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="reflection">
+        <h2 class="work-h2 wannote-yellow">Reflection</h2>
+        <p>For this project, I tried out an object-oriented UI design approach to minimize modality. As a result, I was able to minimize the number of screens that were required for the design, as well as make the UI user-friendly and intuitive.</p>
+        <p>If we were to actually launch this product, it would not be easy, as I anticipate that many problems would arise in digitizing the conventional workflow on the vet's side. Albeit, it was rewarding to be able to create something that I find to be extremely helpful for pet owners.</p>
+      </article>
+    </main>
+    <aside class="other-pj">
+      <div class="other-pj-wrapper">
+        <h2 class="work-h2 wannote-yellow">Other Projects</h2>
+        <div class="other-flex">
+          <div class="work-container work-tms other-work-container">
+            <a href="https://takaomura.com/jp/tms">
+              <div class="work-thumbnail"><img src="../images/tms/tms-thumbnail.jpg" alt="TMS thumbnail"></div>
+              <h3>Donation Page Redesign</h3>
+              <p>Responsive website</p>
+            </a>
+          </div>
+          <div class="work-container work-batonne other-work-container">
+            <a href="https://takaomura.com/jp/batonne">
+              <div class="work-thumbnail"><img src="../images/batonne/batonne-thumbnail.jpg" alt="Batonne thumbnail"></div>
+              <h3>Food Sharing App Design</h3>
+              <p>Mobile app</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-icon-container">
+        <a href="mailto:takahiro.omura.to@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl footer-icon"></i></a>
+        <a href="https://www.linkedin.com/in/takahiroomura/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-icon"></i></a>
+      </div>
+      <small>Copyright &copy; 2022 Takahiro Omura. All rights reserved.</small>
+    </footer>
+  </div> <!-- end #wrapper -->
+  
+  <!-- Modal boxes  -->
+  <div id="modal-persona" class="modal"><img src="../images/wannote/wannote-persona-jp.png" alt="wannote persona image"></div>
+  <div id="modal-journey" class="modal"><img src="../images/wannote/wannote-journey-asis-jp.svg" alt="wannote journey image"></div>
+  <div id="modal-journey-tobe" class="modal"><img src="../images/wannote/wannote-journey-tobe-jp.svg" alt="wannote TO-BE journey image"></div>
+  <div id="modal-object" class="modal"><img src="../images/wannote/wannote-object-jp.svg" alt="wannote object image"></div>
+  <div id="modal-object-rel" class="modal"><img src="../images/wannote/wannote-object-rel-jp.svg" alt="wannote object relationship image"></div>
+  <div id="modal-visual-sys" class="modal"><img src="../images/wannote/wannote-visual-system.svg" alt="wannote visual system image"></div>
+  <div id="modal-paper" class="modal"><img src="../images/wannote/wannote-paper.png" alt="wannote paper prototype image"></div>
+  <div id="modal-hifi" class="modal"><img src="../images/wannote/wannote-hifi.png" alt="wannote hi-fi prototype image"></div>
+  
+  <!--　Button to go to the top of the page	-->
+	<div class="page-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+  
+</body>
+</html>
